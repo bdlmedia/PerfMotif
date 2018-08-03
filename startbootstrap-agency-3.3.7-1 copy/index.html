@@ -28,6 +28,12 @@
     <!-- Theme CSS -->
     <link href="css/agency.min.css" rel="stylesheet">
 
+    <!-- Animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -99,7 +105,7 @@
                     <!-- <h3 class="section-subheading text-muted">We handle all your businesses online media and marketing needs.</h3> -->
                 </div>
             </div>
-            <div class="row text-center">
+            <div class="row text-center" data-aos="fade-right">
                 <a href="#devModal" class="portfolio-link" data-toggle="modal">
                     <div class="col-md-4 service-hover">
                         <span class="fa-stack fa-4x">
@@ -146,7 +152,7 @@
                 <br>
                 <br>
             </div>
-            <div class="row text-center">
+            <div class="row text-center"  data-aos="fade-left">
                 <a href="#affiliateModal" class="portfolio-link" data-toggle="modal">
                     <div class="col-md-4 service-hover">
                         <span class="fa-stack fa-4x icon2">
@@ -265,7 +271,7 @@
                     <h3 class="section-subheading text-muted">From Our Clients.</h3>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" data-aos="fade-right">
                 <div class="col-md-3 col-sm-6 portfolio-item">
                     <a href="#justfab" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -327,7 +333,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" data-aos="fade-left">
                 <div class="col-md-3 col-sm-6 portfolio-item">
                     <a href="#ebates" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -3529,6 +3535,9 @@
             });
         });
     </script>
+    <script>
+            AOS.init();
+          </script>
 
 </body>
 
