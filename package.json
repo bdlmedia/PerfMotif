@@ -5,8 +5,16 @@
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "browser-sync": "^2.24.6",
     "express": "^4.16.3",
-    "path": "^0.12.7"
+    "gulp": "^3.9.1",
+    "gulp-less": "^4.0.1",
+    "gulp-sass": "^4.0.1",
+    "path": "^0.12.7",
+    "gulp-uglify": "^1.5.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-header": "^1.8.7",
+    "gulp-clean-css": "^2.0.10"
   },
   "devDependencies": {},
   "scripts": {
