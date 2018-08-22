@@ -2943,6 +2943,17 @@
                 axis: 'x',
                 trigger: 'hover'
             });
+    var alterClass = function() {
+    var ww = document.body.clientWidth;
+    if (ww < 992) {
+      $('.mainSubBody').removeClass('modal-right');
+    };
+  };
+  $(window).resize(function(){
+    alterClass();
+  });
+  //Fire it when the page first loads:
+  alterClass();
         });
     </script>
     <script>
