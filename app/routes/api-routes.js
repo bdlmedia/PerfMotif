@@ -4,32 +4,30 @@
 
 // Dependencies
 // =============================================================
-var connection = require("../config/connection.js");
+var Contact = require("../models/contact.js");
+
 
 // Routes
 // =============================================================
 module.exports = function(app) {
-  // Get all chirps
-  app.get("/api/all", function(req, res) {
-    var dbQuery = "SELECT * FROM website-contact";
-
-    connection.query(dbQuery, function(err, result) {
-      if (err) throw err;
-      res.json(result);
-    });
-  });
 
   // Add a chirp
   app.post("/api/new", function(req, res) {
-    console.log("Form Sent:");
+
+    console.log("Contact Data:");
     console.log(req.body);
 
-    var dbQuery = "INSERT INTO wesbite-contact (name, email, phone, message) VALUES (?,?,?,?)";
-
-    connection.query(dbQuery, [req.body.author, req.body.body, req.body.created_at], function(err, result) {
-      if (err) throw err;
-      console.log("Contact Form Successfully Posted!");
+    Contact.create({
+      name: req.body.name,
+      email: req.body.email,
+      phone: req.body.phone,
+      message: req.body.message,
+      created_at: req.body.created_at
+    }).then(function(results) {
+      // `results` here would be the newly created chirp
       res.end();
     });
+
   });
+
 };

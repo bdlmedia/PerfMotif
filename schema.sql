@@ -1,6 +1,6 @@
 CREATE DATABASE bespoke_db
 
-CREATE TABLE `website-contact` (
+CREATE TABLE `contact` (
   `id` Int( 5) AUTO_INCREMENT NOT NULL,
   `created_at` DATETIME NOT NULL,
   `name` VARCHAR( 255) NOT NULL,
