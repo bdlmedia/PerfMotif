@@ -9,22 +9,34 @@ var sequelize = require("../config/connection.js");
 // Creates a model that matches up with DB
 var Contact = sequelize.define("contact", {
   name: {
-    type: Sequelize.STRING
+    type: Sequelize.STRING,
+    allowNull: false,
+    validate:{
+      len: [1]
+    }
   },
   email: {
-    type: Sequelize.STRING
+    type: Sequelize.STRING,
+    allowNull: false,
+    unique: true,
+    validate:{
+      len: [1]
+    }
   },
   phone: {
-    type: Sequelize.INTEGER
+    type: Sequelize.INTEGER,
+    allowNull: false,
+    validate:{
+      len: [10]
+    }
   },
   message: {
-    type: Sequelize.STRING
+    type: Sequelize.STRING,
+    allowNull: false,
+    validate:{
+      len: [1]
+    }
   },
-  createdAt: {
-    type: Sequelize.DATE
-  }
-}, {
-  timestamps: false
 });
 
 // Syncs with DB
