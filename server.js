@@ -29,8 +29,8 @@ app.use(express.static("public"));
 // ================================================================================
 
 // require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
-// require("./public")(app);
+require("./app/routes/htmlRoutes")(app);
+require("./app/public")(app);
 
 // =============================================================================
 // LISTENER
