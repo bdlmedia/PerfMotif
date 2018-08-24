@@ -22,12 +22,17 @@ module.exports = function(app) {
       email: req.body.email,
       phone: req.body.phone,
       message: req.body.message,
-      created_at: req.body.created_at
     }).then(function(results) {
-      // `results` here would be the newly created chirp
+      // `results` 
+      console.log("success")
       res.end();
-    });
-
+    })
+    .catch(function(err) {
+      // print the error details
+      console.log(err);
+      console.log("error")
   });
+  
+});
 
 };

@@ -24,7 +24,7 @@ var Contact = sequelize.define("contact", {
     }
   },
   phone: {
-    type: Sequelize.INTEGER,
+    type: Sequelize.STRING,
     allowNull: false,
     validate:{
       len: [10]
