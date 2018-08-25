@@ -1,15 +1,25 @@
-// *********************************************************************************
-// CONNECTION.JS - THIS FILE INITIATES THE CONNECTION TO MYSQL
-// *********************************************************************************
+// // Set up MySQL connection.
+// var mysql = require("mysql");
 
-// Dependencies
-var Sequelize = require("sequelize");
+// if (process.env.JAWSDB_URL) {
+//   connection = mysql.createConnection(process.env.JAWSDB_URL);
+// } else {
+//   connection = mysql.createConnection({
+//     host: "localhost",
+//     user: "root",
+//     password: "",
+//     database: "bespoke_db"
+//   });
+// };
 
-// Creates mySQL connection using Sequelize
-var sequelize = new Sequelize("bespoke_db", "root", "", {
-  host: "localhost",
-  dialect: "mysql"
-});
+// // Make connection.
+// connection.connect(function(err) {
+//   if (err) {
+//     console.error("error connecting: " + err.stack);
+//     return;
+//   }
+//   console.log("connected as id " + connection.threadId);
+// });
 
-// Exports the connection for other files to use
-module.exports = sequelize;
+// // Export connection for our ORM to use.
+// module.exports = connection;
