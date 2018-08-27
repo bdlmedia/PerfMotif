@@ -2925,6 +2925,15 @@
     </div>
     <!-- End -->
 
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="confirmSentModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div id="sent-modal-content">
+      
+    </div>
+  </div>
+</div>
+
+
     <!-- jQuery -->
     <script src="./vendor/jquery/jquery.min.js"></script>
 
@@ -2998,10 +3007,14 @@ if (isValid) {
   $("#phone").val("");
   $("#message").val("");
 
-  alert("Thank you for reaching out! We will be in contact soon");
+//   alert("Thank you for reaching out! We will be in contact soon");
+
+  $("#sent-modal-content").html("<div class='col-s-12'><h2>Thank you for your submission</h2><br><h4>We will be in touch shortly.</h4></div>")
 
 } else {
-    alert("Sorry something went wrong, Please fill in all the fields");
+    // alert("Sorry something went wrong, Please fill in all the fields");
+    $("#sent-modal-content").html("<div class='col-s-12'><h2>Sorry something went wrong</h2><br><h4>Please fill in all form fields and submit again.</h4></div>")
+
 }
 
 });
@@ -3038,6 +3051,8 @@ if (isValid) {
   $("#message").val("");
 
   alert("Thank you for reaching out! We will be in contact soon");
+
+  
 
 } else {
     alert("Sorry something went wrong, Please fill in all the fields");
