@@ -6,7 +6,7 @@ module.exports = function (app) {
     // POST route for saving a new Class
     app.post("/api/new", function (req, res) {
         console.log(req.body);
-        db.contact.create({
+        db.webcontact.create({
             name: req.body.name,
             email: req.body.email,
             phone: req.body.phone,
