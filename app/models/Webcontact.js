@@ -2,7 +2,7 @@ var express = require("sequelize");
 
 module.exports = function (sequelize, DataTypes) {
     // Creates a "Character" model that matches up with DB
-    var contact = sequelize.define("contact", {
+    var webcontact = sequelize.define("webcontact", {
         // the name of the character (a string)
         name: {
             type: DataTypes.STRING,
@@ -33,5 +33,5 @@ module.exports = function (sequelize, DataTypes) {
             }
         },
     });
-    return contact;
+    return webcontact;
 };

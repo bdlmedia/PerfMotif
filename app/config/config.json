@@ -14,10 +14,10 @@
       "dialect": "mysql"
     },
     "production": {
-      "username": "ezts9og2fh5kgu4c",
-      "password": "ximyijdfhlt16v60",
-      "database": "cvavd3ce52r20i6s",
-      "host": "blonze2d5mrbmcgf.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+      "username": "baddlabsdatabase",
+      "password": "BaddLabs2018!",
+      "database": "baddlabsdb",
+      "host": "baddlabsdb.cxpwsiho9xhx.us-west-2.rds.amazonaws.com",
       "dialect": "mysql"
     }
   }
