@@ -456,52 +456,33 @@ padding:50px;box-shadow: 5px 10px 18px #888888;}.modal-body-wrapper{margin-top:2
   @media(max-width:768px) {
     .fixed-parallax-img-branding {
       background-attachment: inherit!important;
-      margin-top: 40px;
     }
     .fixed-parallax-img-media {
       background-attachment: inherit!important;
-      margin-top: 40px;
-
     }
     .fixed-parallax-img-dev {
       background-attachment: inherit!important;
-      margin-top: 40px;
-
     }
     .fixed-parallax-img-mr {
       background-attachment: inherit!important;
-      margin-top: 40px;
-
     }
     .fixed-parallax-img-cd {
       background-attachment: inherit!important;
-      margin-top: 40px;
-
     }
     .fixed-parallax-img-am {
       background-attachment: inherit!important;
-      margin-top: 40px;
-
     }
     .fixed-parallax-img-sm {
       background-attachment: inherit!important;
-      margin-top: 40px;
-
     }
     .fixed-parallax-img-email {
       background-attachment: inherit!important;
-      margin-top: 40px;
-
     }
     .fixed-parallax-img-da {
       background-attachment: inherit!important;
-      margin-top: 40px;
-
     }
     .fixed-parallax-img-train {
       background-attachment: inherit!important;
-      margin-top: 40px;
-
     }
   }
   
@@ -650,7 +631,7 @@ padding:50px;box-shadow: 5px 10px 18px #888888;}.modal-body-wrapper{margin-top:2
 .modal-service-container {
   margin-top: 40px;
 }
-/* .fixed-parallax-img-branding {
+.fixed-parallax-img-branding {
   margin-top: 40px;
 }
 .fixed-parallax-img-media {
@@ -679,7 +660,7 @@ padding:50px;box-shadow: 5px 10px 18px #888888;}.modal-body-wrapper{margin-top:2
 }
 .fixed-parallax-img-train {
   margin-top: 40px;
-} */
+}
 
 #whyBespokeContainer {
   margin-top: 120px;
