@@ -176,6 +176,7 @@
                                 </div>
                             </div>
                         </a>
+
                         <a class="service-link" href="#campaignModal" data-toggle="modal">
                         <div class="col-sm-2 service-wrapper">
                                     <div class="row">
@@ -220,7 +221,7 @@
                     </div>
                     </a>
                     
-                    <a class="service-link">
+                    <a href="#emailModal" data-toggle="modal" class="service-link">
                         <div class="col-sm-2 service-wrapper">
                                 <div class="row">
                                     <img src="./img/biz-icons/email.png" class="service-img">
@@ -231,7 +232,7 @@
                             </div>
                     </a>
     
-                    <a href="#analyticsModal" data-toggle="modal" class="service-link">
+                    <a href="#dataAnalModal" data-toggle="modal" class="service-link">
                             <div class="col-sm-2 service-wrapper">
                                     <div class="row">
                                         <img src="./img/biz-icons/research.png" class="service-img">
@@ -242,7 +243,7 @@
                                 </div>
                             </a>
                             
-                            <a class="service-link">
+                            <a class="service-link"href="#trainingModal" data-toggle="modal" class="service-link">
                             <div class="col-sm-2 service-wrapper">
                                         <div class="row">
                                             <img src="./img/biz-icons/presentation.png" class="service-img">
@@ -1894,9 +1895,256 @@
     </div>
 <!-- END -->
 
+<!-- Affiliate Modal -->
+<div class="portfolio-modal modal fade" id="affiliateModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+                <div class="modal-content bg-light-gray">
+                    <div class="close-modal" data-dismiss="modal">
+                        <div class="lr">
+                            <div class="rl">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container modal-container">
+                        <div class="modal-body">
+                            <div class="row modal-top-row">
+                                <div class="col-sm-6 col-xs-12">
+                                <div class="modal-title-wrapper" id="affiliateTitleWrap">
+                                    <p class="modal-title-am">Affiliate Management</p>
+                                </div>
+                                </div>
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="modal-service-container">
+                                        <div class="modal-body-wrapper">
+                                        <p class="modal-body-txt modal-body-txt-am">Full Program Development</p>
+                                        <p class="modal-body-txt modal-body-txt-am">Program Management</p>
+                                        <p class="modal-body-txt modal-body-txt-am">Current Program Audit and Optimization</p>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row fixed-row-branding">
+                                    <div class="fixed-parallax-img-am"></div>
+                            </div>
+                            <div id="whyBespokeContainer">
+                                    <div class="row">
+                                        <h3 id="whyHead">Why Choose Bespoke?</h3>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-4 wb-icon-wrapper">
+                                                    <img src="./img/biz-icons/checklist.png">
+                                                    <p>One Stop Shop for all Digital Media Needs</p>
+                                                </div>
+                                                <div class="col-md-4 wb-icon-wrapper">
+                                                    <img src="./img/biz-icons/bar-chart.png">
+                                                    <p>Data Driven Analytics and Optimization</p>
+                                                </div>
+                                                <div class="col-md-4 wb-icon-wrapper">
+                                                    <img src="./img/biz-icons/recruitment.png">
+                                                    <p>State of the Art Customer Targeting</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 wb-icon-wrapper">
+                                                    <img src="./img/biz-icons/connection.png">
+                                                    <p>Strong Connections to Major Networks and Ad Platforms</p>
+                                                </div>
+                                                <div class="col-md-4 wb-icon-wrapper">
+                                                    <img src="./img/biz-icons/teamwork.png">
+                                                    <p>Years of Experience in Tried and Tested Methods</p>
+                                                </div>
+                                                <div class="col-md-4 wb-icon-wrapper">
+                                                    <img src="./img/biz-icons/dollar.png">
+                                                    <p>Campaigns Run in over 30 Countries and 8 Languages</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                        </div>
+                    </div>
+                    <div class="row" id="closeButtonRow">
+                        <div class="col-xs-12">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+    </div>
+    <!-- End -->
 
-<!-- Analytics Modal -->
-<div class="portfolio-modal modal fade" id="analyticsModal" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Social Media Modal -->
+    <div class="portfolio-modal modal fade" id="socialMediaModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                    <div class="modal-content bg-light-gray">
+                        <div class="close-modal" data-dismiss="modal">
+                            <div class="lr">
+                                <div class="rl">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container modal-container">
+                            <div class="modal-body">
+                                <div class="row modal-top-row">
+                                    <div class="col-sm-6 col-xs-12">
+                                    <div class="modal-title-wrapper" id="affiliateTitleWrap">
+                                        <p class="modal-title-sm">Social Media</p>
+                                    </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="modal-service-container" id="socialServWrap">
+                                            <div class="modal-body-wrapper">
+                                            <p class="modal-body-txt modal-body-txt-sm">Build Social Hubs</p>
+                                            <p class="modal-body-txt modal-body-txt-sm">Content Creation</p>
+                                            <p class="modal-body-txt modal-body-txt-sm">Day-to-Day Account Management</p>
+                                            <p class="modal-body-txt modal-body-txt-sm">Current Social Media Audit & Analysis</p>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row fixed-row-branding">
+                                        <div class="fixed-parallax-img-sm"></div>
+                                </div>
+                                <div id="whyBespokeContainer">
+                                        <div class="row">
+                                            <h3 id="whyHead">Why Choose Bespoke?</h3>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="row">
+                                                    <div class="col-md-4 wb-icon-wrapper">
+                                                        <img src="./img/biz-icons/checklist.png">
+                                                        <p>One Stop Shop for all Digital Media Needs</p>
+                                                    </div>
+                                                    <div class="col-md-4 wb-icon-wrapper">
+                                                        <img src="./img/biz-icons/bar-chart.png">
+                                                        <p>Data Driven Analytics and Optimization</p>
+                                                    </div>
+                                                    <div class="col-md-4 wb-icon-wrapper">
+                                                        <img src="./img/biz-icons/recruitment.png">
+                                                        <p>State of the Art Customer Targeting</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4 wb-icon-wrapper">
+                                                        <img src="./img/biz-icons/connection.png">
+                                                        <p>Strong Connections to Major Networks and Ad Platforms</p>
+                                                    </div>
+                                                    <div class="col-md-4 wb-icon-wrapper">
+                                                        <img src="./img/biz-icons/teamwork.png">
+                                                        <p>Years of Experience in Tried and Tested Methods</p>
+                                                    </div>
+                                                    <div class="col-md-4 wb-icon-wrapper">
+                                                        <img src="./img/biz-icons/dollar.png">
+                                                        <p>Campaigns Run in over 30 Countries and 8 Languages</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                            </div>
+                        </div>
+                        <div class="row" id="closeButtonRow">
+                            <div class="col-xs-12">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+        </div>
+        <!-- End -->
+
+         <!-- Email -->
+     <div class="portfolio-modal modal fade" id="emailModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                    <div class="modal-content bg-light-gray">
+                        <div class="close-modal" data-dismiss="modal">
+                            <div class="lr">
+                                <div class="rl">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container modal-container">
+                            <div class="modal-body">
+                                <div class="row modal-top-row">
+                                    <div class="col-sm-6 col-xs-12">
+                                    <div class="modal-title-wrapper" id="emailTitWrap">
+                                        <p class="modal-title modal-title-email">Email / Newsletter Management</p>
+                                    </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="modal-service-container" id="emailServeWrap">
+                                            <div class="modal-body-wrapper modal-body-wrapper-email">
+                                            <p class="modal-body-txt modal-body-txt-email">Design & Creatives</p>
+                                            <p class="modal-body-txt modal-body-txt-email">Copywriting</p>
+                                            <p class="modal-body-txt modal-body-txt-email">Coding</p>
+                                            <p class="modal-body-txt modal-body-txt-email">Planning & Scheduling</p>
+                                            <p class="modal-body-txt modal-body-txt-email">Current Newsletter Audit and Analysis</p>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row fixed-row-branding">
+                                        <div class="fixed-parallax-img-email"></div>
+                                </div>
+                                <div id="whyBespokeContainer">
+                                        <div class="row">
+                                            <h3 id="whyHead">Why Choose Bespoke?</h3>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="row">
+                                                    <div class="col-md-4 wb-icon-wrapper">
+                                                        <img src="./img/biz-icons/checklist.png">
+                                                        <p>One Stop Shop for all Digital Media Needs</p>
+                                                    </div>
+                                                    <div class="col-md-4 wb-icon-wrapper">
+                                                        <img src="./img/biz-icons/bar-chart.png">
+                                                        <p>Data Driven Analytics and Optimization</p>
+                                                    </div>
+                                                    <div class="col-md-4 wb-icon-wrapper">
+                                                        <img src="./img/biz-icons/recruitment.png">
+                                                        <p>State of the Art Customer Targeting</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4 wb-icon-wrapper">
+                                                        <img src="./img/biz-icons/connection.png">
+                                                        <p>Strong Connections to Major Networks and Ad Platforms</p>
+                                                    </div>
+                                                    <div class="col-md-4 wb-icon-wrapper">
+                                                        <img src="./img/biz-icons/teamwork.png">
+                                                        <p>Years of Experience in Tried and Tested Methods</p>
+                                                    </div>
+                                                    <div class="col-md-4 wb-icon-wrapper">
+                                                        <img src="./img/biz-icons/dollar.png">
+                                                        <p>Campaigns Run in over 30 Countries and 8 Languages</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                            </div>
+                        </div>
+                        <div class="row" id="closeButtonRow">
+                            <div class="col-xs-12">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+        </div>
+        <!-- End -->
+
+
+<!-- Data Analytics Modal -->
+<div class="portfolio-modal modal fade" id="dataAnalModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
                 <div class="modal-content bg-light-gray">
                     <div class="close-modal" data-dismiss="modal">
@@ -1977,321 +2225,95 @@
     </div>
 <!-- END -->
 
-     <!-- Campaign Development Modal -->
-     <div class="portfolio-modal modal fade" id="campaignModal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                    <div class="modal-content bg-light-gray">
-                        <div class="close-modal" data-dismiss="modal">
-                            <div class="lr">
-                                <div class="rl">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container modal-container">
-                            <div class="modal-body">
-                                <div class="row modal-top-row">
-                                    <div class="col-sm-6 col-xs-12">
-                                    <div class="modal-title-wrapper">
-                                        <h1 class="modal-title">Branding</h1>
-                                    </div>
-                                    </div>
-                                    <div class="col-sm-6 col-xs-12">
-                                        <div class="modal-service-container">
-                                            <div class="modal-body-wrapper">
-                                            <p class="modal-body-txt">Mission Development</p>
-                                            <p class="modal-body-txt">Product & Company Development</p>
-                                            <p class="modal-body-txt">Aesthetics & Design</p>
-                                            <p class="modal-body-txt">Positioning Analysis</p>
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row fixed-row-branding">
-                                        <div class="fixed-parallax-img-branding"></div>
-                                </div>
-                                <div id="whyBespokeContainer">
-                                        <div class="row">
-                                            <h3 id="whyHead">Why Choose Bespoke?</h3>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="row">
-                                                    <div class="col-md-4 wb-icon-wrapper">
-                                                        <img src="./img/biz-icons/checklist.png">
-                                                        <p>One Stop Shop for all Digital Media Needs</p>
-                                                    </div>
-                                                    <div class="col-md-4 wb-icon-wrapper">
-                                                        <img src="./img/biz-icons/bar-chart.png">
-                                                        <p>Data Driven Analytics and Optimization</p>
-                                                    </div>
-                                                    <div class="col-md-4 wb-icon-wrapper">
-                                                        <img src="./img/biz-icons/recruitment.png">
-                                                        <p>State of the Art Customer Targeting</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-4 wb-icon-wrapper">
-                                                        <img src="./img/biz-icons/connection.png">
-                                                        <p>Strong Connections to Major Networks and Ad Platforms</p>
-                                                    </div>
-                                                    <div class="col-md-4 wb-icon-wrapper">
-                                                        <img src="./img/biz-icons/teamwork.png">
-                                                        <p>Years of Experience in Tried and Tested Methods</p>
-                                                    </div>
-                                                    <div class="col-md-4 wb-icon-wrapper">
-                                                        <img src="./img/biz-icons/dollar.png">
-                                                        <p>Campaigns Run in over 30 Countries and 8 Languages</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                            </div>
-                        </div>
-                        <div class="row" id="closeButtonRow">
-                            <div class="col-xs-12">
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-        </div>
-        <!-- End -->
-
-
-     <!-- Affiliate Modal -->
-     <div class="portfolio-modal modal fade" id="affiliateModal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                    <div class="modal-content bg-light-gray">
-                        <div class="close-modal" data-dismiss="modal">
-                            <div class="lr">
-                                <div class="rl">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container modal-container">
-                            <div class="modal-body">
-                                <div class="row modal-top-row">
-                                    <div class="col-sm-6 col-xs-12">
-                                    <div class="modal-title-wrapper">
-                                        <h1 class="modal-title">Branding</h1>
-                                    </div>
-                                    </div>
-                                    <div class="col-sm-6 col-xs-12">
-                                        <div class="modal-service-container">
-                                            <div class="modal-body-wrapper">
-                                            <p class="modal-body-txt">Mission Development</p>
-                                            <p class="modal-body-txt">Product & Company Development</p>
-                                            <p class="modal-body-txt">Aesthetics & Design</p>
-                                            <p class="modal-body-txt">Positioning Analysis</p>
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row fixed-row-branding">
-                                        <div class="fixed-parallax-img-branding"></div>
-                                </div>
-                                <div id="whyBespokeContainer">
-                                        <div class="row">
-                                            <h3 id="whyHead">Why Choose Bespoke?</h3>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="row">
-                                                    <div class="col-md-4 wb-icon-wrapper">
-                                                        <img src="./img/biz-icons/checklist.png">
-                                                        <p>One Stop Shop for all Digital Media Needs</p>
-                                                    </div>
-                                                    <div class="col-md-4 wb-icon-wrapper">
-                                                        <img src="./img/biz-icons/bar-chart.png">
-                                                        <p>Data Driven Analytics and Optimization</p>
-                                                    </div>
-                                                    <div class="col-md-4 wb-icon-wrapper">
-                                                        <img src="./img/biz-icons/recruitment.png">
-                                                        <p>State of the Art Customer Targeting</p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-4 wb-icon-wrapper">
-                                                        <img src="./img/biz-icons/connection.png">
-                                                        <p>Strong Connections to Major Networks and Ad Platforms</p>
-                                                    </div>
-                                                    <div class="col-md-4 wb-icon-wrapper">
-                                                        <img src="./img/biz-icons/teamwork.png">
-                                                        <p>Years of Experience in Tried and Tested Methods</p>
-                                                    </div>
-                                                    <div class="col-md-4 wb-icon-wrapper">
-                                                        <img src="./img/biz-icons/dollar.png">
-                                                        <p>Campaigns Run in over 30 Countries and 8 Languages</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                            </div>
-                        </div>
-                        <div class="row" id="closeButtonRow">
-                            <div class="col-xs-12">
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-        </div>
-        <!-- End -->
-
-
-
-
-    <!-- Social Media Modal -->
-    <div class="portfolio-modal modal fade" id="socialMediaModal" tabindex="-1" role="dialog" aria-hidden="true">
+<!-- Training Modal -->
+<div class="portfolio-modal modal fade" id="trainingModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content bg-light-gray">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="modal-body">
-                        <!-- Project Details Go Here -->
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h2 class="modal-headings">Social Media</h2>
-                            </div>
-                        </div>
-                        <div class="row equal">
-                            <div class="col-md-6">
-                                <img src="./img/instagram.jpg" class="img-responsive img-centered modal-image image-left">
-                            </div>
-                            <div class="col-md-6 mainSubBody modal-right">
-                                <div class="row" style="border-bottom: 1px solid black;">
-                                    <div class="col-md-12">
-                                <h4 style="margin-bottom: 30px;">Omni-Channel Social Media Management</h4>
-                                <p>We are capable of managing all of your social media platforms and maximizing your organic outreach.</p>
-                               <p><strong>Our goals for social management:</strong></p>
-                                <ul style="text-align: left; margin-bottom: 30px;">
-                                    <li>Content Creation</li>
-                                    <li>Organic Traffic Development</li>
-                                    <li>Increase Following</li>
-                                    <li>Social Strategy Consulting</li>
-                                    <li>Beautified Brand Strategy</li>
-                                </ul>
-                                </div>
-                                </div>
-                                <div class="row" style="margin-top: 30px; text-pr">
-                                    <div class="col-md-3">
-                                            <span class="fa-stack fa-4x">
-                                                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                                </span>
-                                    </div>
-                                    <div class="col-md-3">
-                                            <span class="fa-stack fa-4x">
-                                                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-                                                </span>
-                                    </div>
-                                    <div class="col-md-3">
-                                            <span class="fa-stack fa-4x">
-                                                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                                    <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
-                                                </span>
-                                    </div>
-                                    <div class="col-md-3">
-                                            <span class="fa-stack fa-4x">
-                                                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                                </span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div id="whyBespokeContainer">
-                            <div class="row">
-                                <h3 id="whyHead">Why Choose Bespoke?</h3>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-5" id="right-borders">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <img src="./img/biz-icons/checklist.png">
-                                            <p>One Stop Shop for all Digital Media Needs</p>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <img src="./img/biz-icons/bar-chart.png">
-                                            <p>Data Driven Analytics and Optimization</p>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <img src="./img/biz-icons/recruitment.png">
-                                            <p>State of the Art Customer Targeting</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <img src="./img/biz-icons/connection.png">
-                                            <p>Strong Connections to Major Networks and Ad Platforms</p>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <img src="./img/biz-icons/teamwork.png">
-                                            <p>Years of Experience in Tried and Tested Methods</p>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <img src="./img/biz-icons/dollar.png">
-                                            <p>Campaigns Run in over 30 Countries and 8 Languages</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-7" style="margin-top:20px">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <img src="./img/gp-cert.png" alt="google-premier" class="img-responsive img-centered
-                                           " style="margin-top:35px;" id="google-prem-img">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <img src="./img/scrum-agile.png" alt="Scrum-Agile" class="img-responsive
-                                            img-centered" style="height: 190px;" id="scrum-img">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <img src="./img/fb-cert.png" alt="fb" class="img-responsive img-centered
-                                           " style="height: 168px;margin-top:-25px">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <img src="./img/shopify-partners.png" alt="shopify" class="img-responsive
-                                            img-centered">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="row" style="margin-top: 30px;">
-                            <div class="col-lg-8 col-lg-offset-2">
-                                <button type="button" class="btn btn-primary" data-dismiss="modal">
-                                    <i class="fa fa-times"></i> Close</button>
+                <div class="modal-content bg-light-gray">
+                    <div class="close-modal" data-dismiss="modal">
+                        <div class="lr">
+                            <div class="rl">
                             </div>
                         </div>
                     </div>
+                    <div class="container modal-container">
+                        <div class="modal-body">
+                            <div class="row modal-top-row">
+                                <div class="col-sm-6 col-xs-12">
+                                <div class="modal-title-wrapper" id="affiliateTitleWrap">
+                                    <p class="modal-title-sm">Social Media</p>
+                                </div>
+                                </div>
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="modal-service-container" id="socialServWrap">
+                                        <div class="modal-body-wrapper">
+                                        <p class="modal-body-txt modal-body-txt-sm">Build Social Hubs</p>
+                                        <p class="modal-body-txt modal-body-txt-sm">Content Creation</p>
+                                        <p class="modal-body-txt modal-body-txt-sm">Day-to-Day Account Management</p>
+                                        <p class="modal-body-txt modal-body-txt-sm">Current Social Media Audit & Analysis</p>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row fixed-row-branding">
+                                    <div class="fixed-parallax-img-sm"></div>
+                            </div>
+                            <div id="whyBespokeContainer">
+                                    <div class="row">
+                                        <h3 id="whyHead">Why Choose Bespoke?</h3>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-4 wb-icon-wrapper">
+                                                    <img src="./img/biz-icons/checklist.png">
+                                                    <p>One Stop Shop for all Digital Media Needs</p>
+                                                </div>
+                                                <div class="col-md-4 wb-icon-wrapper">
+                                                    <img src="./img/biz-icons/bar-chart.png">
+                                                    <p>Data Driven Analytics and Optimization</p>
+                                                </div>
+                                                <div class="col-md-4 wb-icon-wrapper">
+                                                    <img src="./img/biz-icons/recruitment.png">
+                                                    <p>State of the Art Customer Targeting</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4 wb-icon-wrapper">
+                                                    <img src="./img/biz-icons/connection.png">
+                                                    <p>Strong Connections to Major Networks and Ad Platforms</p>
+                                                </div>
+                                                <div class="col-md-4 wb-icon-wrapper">
+                                                    <img src="./img/biz-icons/teamwork.png">
+                                                    <p>Years of Experience in Tried and Tested Methods</p>
+                                                </div>
+                                                <div class="col-md-4 wb-icon-wrapper">
+                                                    <img src="./img/biz-icons/dollar.png">
+                                                    <p>Campaigns Run in over 30 Countries and 8 Languages</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                        </div>
+                    </div>
+                    <div class="row" id="closeButtonRow">
+                        <div class="col-xs-12">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                    </div>
                 </div>
-            </div>
-        </div>
     </div>
     <!-- End -->
 
-<div class="modal fade" id="sent-modal" tabindex="-1" role="dialog" aria-hidden="true">
+
+<!-- <div class="modal fade" id="sent-modal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content" id="sent-modal-content">
     </div>
   </div>
-</div>
+</div> -->
 
 
     <!-- jQuery -->
