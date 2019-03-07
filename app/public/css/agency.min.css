@@ -533,7 +533,7 @@ padding:50px;box-shadow: 5px 10px 18px #888888;}.modal-body-wrapper{margin-top:2
         align-items: flex-start;  
     }
 
-    .back-inner-container-top #oneOrder {
+    /* .back-inner-container-top #oneOrder {
     -webkit-box-ordinal-group: 3 !important;
     -moz-box-ordinal-group: 3 !important;
     -ms-flex-order: 3 !important;
@@ -556,7 +556,7 @@ padding:50px;box-shadow: 5px 10px 18px #888888;}.modal-body-wrapper{margin-top:2
     -webkit-order: 1 !important;
     order: 1 !important;
     width: 100%;
-    }
+    } */
     .inner-back-title {
         height:200px !important;
         margin-top:0px;
