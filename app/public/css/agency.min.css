@@ -145,6 +145,13 @@ padding:50px;box-shadow: 5px 10px 18px #888888;}.modal-body-wrapper{margin-top:2
     font-size: 26px;
   }
 }
+
+@media (max-width:1024px) {
+  .case-study-parrallax, .case-study-parrallax1, .case-study-parrallax2,.case-study-parrallax3,.case-study-parrallax4,.case-study-parrallax5,.fixed-parallax-img-branding, .fixed-parallax-img-media,.fixed-parallax-img-dev,.fixed-parallax-img-mr,.fixed-parallax-img-cd,.fixed-parallax-img-am,.fixed-parallax-img-sm,.fixed-parallax-img-email, .fixed-parallax-img-train {
+    background-attachment: inherit !important;
+  }
+}
+
   
   @media (min-width:992px) {
   
@@ -445,7 +452,7 @@ padding:50px;box-shadow: 5px 10px 18px #888888;}.modal-body-wrapper{margin-top:2
   }
 
   @media(max-width:768px) {
-    .fixed-parallax-img-branding {
+    /* .fixed-parallax-img-branding {
       background-attachment: inherit!important;
     }
     .fixed-parallax-img-media {
@@ -474,7 +481,7 @@ padding:50px;box-shadow: 5px 10px 18px #888888;}.modal-body-wrapper{margin-top:2
     }
     .fixed-parallax-img-train {
       background-attachment: inherit!important;
-    }
+    } */
 
     .about-container {
       background-attachment:scroll;
