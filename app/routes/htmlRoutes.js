@@ -16,7 +16,7 @@ module.exports = function(app) {
   // ---------------------------------------------------------------------------
 
   app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/index.html"));
+    res.sendFile(path.join(__dirname, "../public/under-construction.html"));
   });
 
   app.get("/under-construction", function(req, res) {
@@ -27,6 +27,6 @@ module.exports = function(app) {
 
   // If no matching route is found default to home
   app.get("*", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/index.html"));
+    res.sendFile(path.join(__dirname, "../public/under-construction.html"));
   });
 };
