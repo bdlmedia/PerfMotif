@@ -820,7 +820,7 @@ line-height: 24px;
 }
  }
 
- @media(max-width:618px) {
+ @media(max-width: 618px) {
      .top-container {
          height: 750px !important;
      }
@@ -1247,6 +1247,7 @@ line-height: 24px;
   line-height: 14px !important;
   font-size: 12px !important;
 }
+ }
 
 @media (max-width:413px) {
  #dedicatedToTrans {
@@ -1546,4 +1547,4 @@ line-height: 24px;
      width: auto;
      height: 100%;
    }
- }
+  }
