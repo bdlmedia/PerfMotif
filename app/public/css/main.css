@@ -108,13 +108,15 @@
 .left-side-main {
   max-width: 33vw !important;
   width: 33vw !important;
-  min-height: 100vh;
+  min-height: 100%;
   background: url(../img/main/desk-main.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 62px;
   display: flex;
   flex-direction: column;
+  position: relative !important;
+  margin-bottom: 140px;
 }
 
 .logo-main img {
@@ -127,10 +129,12 @@
 .right-side-main {
   min-width: 67vw;
   width: 67vw;
-  height: 100vh;
-  overflow: hidden;
+  height: 100%;
+  overflow-y: visible;
   display: flex;
   flex-direction: column;
+  position: relative !important;
+  background-color: white;
 }
 
 .top-sm {
@@ -195,15 +199,95 @@
   background: url("../img/peoplewalking.gif");
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 
 .btm-sm-box {
   max-height: 50%;
   height: 50%;
+  background: #00e7f7;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.under-right {
+  background: #ccc;
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  position: relative !important;
+}
+
+.left-under {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-under1 {
+  width: 25%;
   background: url("../img/main/office-trio.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.left-under2 {
+  width: 25%;
+  background: url("../img/marketimg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.left-under3 {
+  width: 50%;
+  height: auto;
+  top: 0;
+  left: 50%;
+  position: absolute !important;
+}
+
+.tall-img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome-bespoke-cont {
+  text-align: center;
+  height: 100%;
+  color: #000;
+  font-weight: 600;
+  font-size: 22px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5vw;
+  letter-spacing: 3px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+}
+
+/* .stitch-animation {
+  width: 100%;
+  height: 3px;
+  color: black;
+} */
 
   @media (max-width:1230px) {
    #dedicatedToTrans {
