@@ -1,8 +1,14 @@
-const tl = new TimelineMax();
+var tl = new TimelineMax();
+
+//top logo fade in left
+var logo= document.getElementsByClassName("logo-main");
 
 // Intro and hero TL
-
-// tl.from('.intro-container',{scaleY: 1, height: '-100vh', ease: Circ.easeOut });
+tl.to('.intro-container', 1.5,{transform: 'translate3d(0,100vh,0)', delay: 4});
+// collapses into center
+// tl.to('.intro-container', 1.5,{scale:0, delay: 4});
+tl.from(logo, 1, {x: -500}, "-=1");
+tl.from(".lrg-txt", 1, {scale:0}, "-=0.5");
 
 function introAnimation() {
 r = 150;
@@ -39,29 +45,22 @@ TweenMax.to(rightObj.parent(), t,{x: "+" + (d + adjustJank),ease: Linear.easeNon
 
 introAnimation();
 
+//Scroll Logos
+var rate = 100;
+var adjustJank = 4;
 
+var eachImg = document.getElementsByClassName('scroll-img');
 
-//top logo fade in left
-// var logo= document.getElementsByClassName("logo-main");
+for (let i = 0; i < eachImg.length; i++) {
+  var cont = document.getElementById('scrollContainer');
+  var d = cont.clientWidth * 2;
+  var t = d/rate;
 
-// tl.from(logo, 1, {x: -500});
-
-// Scroll Logos
-// var rate = 100;
-// var adjustJank = 4;
-
-// var eachImg = document.getElementsByClassName('scroll-img');
-
-// for (let i = 0; i < eachImg.length; i++) {
-//   var cont = document.getElementById('scrollContainer');
-//   var d = cont.clientWidth * 2;
-//   var t = d/rate;
-
-//   var cln = eachImg[i].cloneNode(true);
-//   // console.log(cln);
-//   //   document.getElementById('lists').appendChild(cln);
-//    TweenMax.to(eachImg, t, {x:'-'+(d+adjustJank), ease: Linear.easeNone,repeat:-1,}
-//    );
-// };
+  var cln = eachImg[i].cloneNode(true);
+  // console.log(cln);
+  //   document.getElementById('lists').appendChild(cln);
+   TweenMax.to(eachImg, t, {x:'-'+(d+adjustJank), ease: Linear.easeNone,repeat:-1,}
+   );
+};
 
 
