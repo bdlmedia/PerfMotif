@@ -19,7 +19,8 @@
   width: 100vw;
   min-height: 100vh;
   height: 100vh;
-  background: url('https://bespokedemo.com/wp-content/uploads/2019/07/light-bg.jpg');
+  /* background: url('https://bespokedemo.com/wp-content/uploads/2019/07/light-bg.jpg'); */
+  background: url("../img/main/light-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1000;
@@ -192,7 +193,7 @@
 
 .middle-right {
   flex-direction: row;
-  height: 450px;
+  height: 550px;
   display: flex;
   flex-wrap: nowrap;
 }
@@ -200,7 +201,7 @@
 .large-text-box {
   flex: 80%;
   max-width: 80%;
-  background: url(https://bespokedemo.com/wp-content/uploads/2019/07/light-bg.jpg);
+  background: url('https://bespokedemo.com/wp-content/uploads/2019/07/light-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -249,6 +250,7 @@
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  align-content: center;
 }
 
 .btm-sm-box {
@@ -259,6 +261,7 @@
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  align-content: center;
 }
 
 .line-ani {
