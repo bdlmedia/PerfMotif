@@ -349,6 +349,7 @@
 .info-section {
   height: 100%;
   width: 100% !important;
+  margin-top: -55px;
 }
 
 .second-header {
