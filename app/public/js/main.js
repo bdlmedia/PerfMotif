@@ -1,28 +1,67 @@
-//logo
+const tl = new TimelineMax();
 
-var logo= document.getElementsByClassName("logo-main");
+// Intro and hero TL
 
-TweenMax.from(logo, 1, {x: -500});
+// tl.from('.intro-container',{scaleY: 1, height: '-100vh', ease: Circ.easeOut });
 
-//Scroll Logos
-var rate = 100;
-var adjustJank = 4;
+function introAnimation() {
+r = 150;
+adjustJank = 4; 
 
-var eachImg = document.getElementsByClassName('scroll-img');
-// console.log(eachImg);
+$(".scroll-txt-left p").each(function() {
+  var leftObj = $(this);
+  var d = leftObj.width();
+  leftObj.clone().appendTo(leftObj.parent());
+  leftObj
+    .parent()
+    .parent()
+    .width(d);
+  var t = d / r;
 
-for (let i = 0; i < eachImg.length; i++) {
-  var cont = document.getElementById('scrollContainer');
-  var d = cont.clientWidth * 2;
-  var t = d/rate;
+TweenMax.to(leftObj.parent(), t,{x: "-" + (d + adjustJank),ease: Linear.easeNone,repeat: -1});
 
-  var cln = eachImg[i].cloneNode(true);
-  console.log(cln);
+});
 
-//   document.getElementById('lists').appendChild(cln);
+$(".scroll-txt-right p").each(function() {
+  var rightObj = $(this);
+  var d = rightObj.width();
+  rightObj.clone().prependTo(rightObj.parent());
+  rightObj
+    .parent()
+    .parent()
+    .width(d);
+  var t = d / r;
 
-   TweenMax.to(eachImg, t, {x:'-'+(d+adjustJank), ease: Linear.easeNone,repeat:-1,}
-   );
+TweenMax.to(rightObj.parent(), t,{x: "+" + (d + adjustJank),ease: Linear.easeNone,repeat: -1});
+});
+
 };
+
+introAnimation();
+
+
+
+//top logo fade in left
+// var logo= document.getElementsByClassName("logo-main");
+
+// tl.from(logo, 1, {x: -500});
+
+// Scroll Logos
+// var rate = 100;
+// var adjustJank = 4;
+
+// var eachImg = document.getElementsByClassName('scroll-img');
+
+// for (let i = 0; i < eachImg.length; i++) {
+//   var cont = document.getElementById('scrollContainer');
+//   var d = cont.clientWidth * 2;
+//   var t = d/rate;
+
+//   var cln = eachImg[i].cloneNode(true);
+//   // console.log(cln);
+//   //   document.getElementById('lists').appendChild(cln);
+//    TweenMax.to(eachImg, t, {x:'-'+(d+adjustJank), ease: Linear.easeNone,repeat:-1,}
+//    );
+// };
 
 
