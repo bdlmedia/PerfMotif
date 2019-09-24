@@ -1,8 +1,8 @@
 var tl = new TimelineMax();
 
 //top logo fade in left
-var logo= document.getElementsByClassName("logo-main");
-TweenMax.from(logo, 1, {x: -500}, "-=1");
+// var logo= document.getElementsByClassName("logo-main");
+// TweenMax.from(logo, 1, {x: -500}, "-=1");
 
 // Intro and hero TL *****uncomment below for working transition*********
 // tl.to('.intro-container', 1.5,{transform: 'translate3d(0,100vh,0)', delay: 4});
