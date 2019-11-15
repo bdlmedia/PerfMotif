@@ -10,6 +10,7 @@
     padding: 0;
     margin: 0;
     overflow: hidden;
+    scroll-behavior: smooth;
   }
 html ::-webkit-scrollbar {
      width: 0px;  /* Remove scrollbar space */
@@ -196,7 +197,7 @@ html ::-webkit-scrollbar {
 }
 
 .bm-menu-nav-item-line {
-    width: 127px;
+    width: 10em;
 }
 
 .bm-menu-nav-item-line span {
