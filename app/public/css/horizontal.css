@@ -40,19 +40,19 @@ html ::-webkit-scrollbar {
     float: left;
     position: relative;
   }
-  .section:nth-child(1) {
+  #section01 {
     background: #fff;
   }
-  .section:nth-child(2) {
+  #section02 {
     background: #fafafa;
   }
-  .section:nth-child(3) {
+  #section03 {
     background: #e5e5e5;
   }
-  .section:nth-child(4) {
+  #section04 {
     background: #cccccc;
   }
-  .section:nth-child(5) {
+  #section05 {
     background: #c8c8c8;
   }
   .sections {
@@ -126,3 +126,96 @@ html ::-webkit-scrollbar {
     margin-left: 17em;
     margin-top: -2em;
   }
+
+  .bm-menu {
+    position: fixed;
+    right: 0;
+    bottom: 20px;
+    z-index: 90;
+    pointer-events: none;
+    color: #888;
+    width: 100%;
+}
+
+  .bm-menu-nav {
+    display: block;
+    text-align: center;
+}
+
+.bm-menu-nav-items {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    pointer-events: auto;
+}
+
+.bm-menu-nav-item {
+    position: relative;
+    cursor: pointer;
+    text-align: left;
+}
+
+.bm-menu-nav-item-title {
+    margin: 0 0 13px 0;
+    font-size: 12px;
+    font-weight: 600;
+    -webkit-transition: color .4s;
+    -o-transition: color .4s;
+    -moz-transition: color .4s;
+    transition: color .4s;
+}
+
+.bm-menu-nav-item-title:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 3px;
+    height: 3px;
+    bottom: -1px;
+    background: rgba(0,0,0,.1);
+    background: rgba(119,119,119,.3);
+    -webkit-transition: background .4s;
+    -o-transition: background .4s;
+    -moz-transition: background .4s;
+    transition: background .4s;
+}
+
+.bm-menu-nav-item-line {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 87px;
+    height: 1px;
+    margin: 0 1px 0 3px;
+    background: rgba(0,0,0,.1);
+    background: rgba(119,119,119,.3);
+}
+
+.bm-menu-nav-item-line {
+    width: 127px;
+}
+
+.bm-menu-nav-item-line span {
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: #fb6833;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -ms-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+    will-change: transform;
+}
+.bm-menu-nav-item:last-child .bm-menu-nav-item-line {
+    display: none;
+}
