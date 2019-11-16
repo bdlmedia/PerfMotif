@@ -29,47 +29,30 @@ function MouseWheelHandler(e) {
 }
 });
 
-// SCROLL INDICATOR LOGIC
-
-window.onscroll = function() {scrollAniFunction()};
-
-function scrollAniFunction() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementsByClassName(".bm-menu-nav-item-line span").style.width = scrolled + "%";
-}
-
-// ANIMATIONS
-var headers = document.querySelectorAll("section");
-  
-var controller = new ScrollMagic.Controller();
-
-var horizontalSlide = new TimelineMax();
-// animate panels
-// .to("#js-slideContainer", 1,   {x: "-20%", onComplete:addActive,onCompleteParams:[1],onReverseComplete:addActive,onReverseCompleteParams:[0]})
-// .to("#js-slideContainer", 1,   {x: "-40%", onComplete:addActive,onCompleteParams:[2],onReverseComplete:addActive,onReverseCompleteParams:[1]})
-// .to("#js-slideContainer", 1,   {x: "-60%", onComplete:addActive,onCompleteParams:[3],onReverseComplete:addActive,onReverseCompleteParams:[2]})
-// .to("#js-slideContainer", 1,   {x: "-80%", onComplete:addActive,onCompleteParams:[4],onReverseComplete:addActive,onReverseCompleteParams:[3]})
-
-// create scene to pin and link animation
-new ScrollMagic.Scene({
-  triggerElement: "#js-wrapper",
-  triggerHook: "onLeave",
-  duration: "400%"
-})
-  .setPin("#js-wrapper")
-  .setTween(horizontalSlide)
-  .addTo(controller);
-
-function addActive(index){
-//console.log(headers[index]);
-for(i=0;i<headers.length;i++)       
-  if(i === index) {headers[i].classList.add("active");}
-  else{headers[i].classList.remove("active");}
-}
-
 //line scroll
 TweenMax.from(".find-out-more-container hr", 2, {width:0}, {width:100}).repeat(1000);
 
-// painting logo
+TweenMax.defaultEase = Power0.easeNone;
+;
+var img = document.getElementsByClassName(".logo-main img");
+var controller = new ScrollMagic.Controller();
+var tl = new TimelineMax({ paused: true });
+
+// create timeline
+// this could also be created in a loop
+tl.set(".logo-main img", {transformOrigin:"0% 100%"});
+tl.fromTo(".logo-main img", 2.2, {width:"0%"}, {width:"100%",  ease:Power0.easeNone, repeat:-1, repeatDelay:2})
+new ScrollMagic.Scene({
+  triggerElement: "#section01",
+  triggerHook: "onLeave",
+  duration: "400%"
+})
+  .setPin("#section01")
+  .setTween(tl)
+  .addIndicators({
+    colorTrigger: "#000",
+    colorStart: "#000",
+    colorEnd: "#000",
+  })
+  .addTo(controller);
+
