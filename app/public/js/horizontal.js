@@ -44,21 +44,16 @@ TweenMax.from(".find-out-more-container hr", 2, {width:0}, {width:100}).repeat(1
 // paint animation
 TweenMax.defaultEase = Power0.easeNone;
 ;
-var img = document.getElementsByClassName(".logo-main img");
 var controller = new ScrollMagic.Controller({vertical: false});
 var tl = new TimelineMax();
-
-// create timeline
-// this could also be created in a loop
-// tl.from(".logo-main img", 4, {scaleX:0, transformOrigin:"right"}, "reveal");
-// tl.to(".logo-main img", 4, {width: "120%", height: "295px"});
+tl
+.from(".s2-img2-cont", 2, {x: 100});
 
 new ScrollMagic.Scene({
-  triggerElement: "#section01",
-  triggerHook: "onLeave",
-  duration: "2000"
+  triggerElement: "#section02",
+  triggerHook: .07,
+  duration: "900"
 })
-//   .setPin("js-wrapper")
   .setTween(tl)
   .addIndicators({
     colorTrigger: "#000",
