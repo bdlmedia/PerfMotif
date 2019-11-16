@@ -316,11 +316,13 @@ html ::-webkit-scrollbar {
     width: 40em;
     height: 100%;
     display: flex;
+    flex-flow: column;
     align-items: center;
+    justify-content: center;
 }
 
 .s2-img1-cont {
-max-width: 13em;  
+max-width: 20em;  
 display: flex;
   align-items: center;
   -webkit-justify-content: center;
@@ -328,12 +330,13 @@ display: flex;
   justify-content: center;
 }
 .s2-img2-cont {
- max-width: 13em;  
- display: flex;
-  align-items: center;
-  -webkit-justify-content: center;
-  /* Safari */
-  justify-content: center;
+  max-width: 20em; 
+  display: flex;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin-left: -30em;
+    margin-top: -3em;
 }
 
 .s2-img1-cont img {
