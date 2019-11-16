@@ -13,7 +13,7 @@ function MouseWheelHandler(e) {
 
     // cross-browser wheel delta
     var e = window.event || e;
-    var delta = - 30 * (Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail))));
+    var delta = - 20 * (Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail))));
 
     var pst = $('#js-wrapper').scrollLeft() + delta;
 
@@ -32,22 +32,24 @@ function MouseWheelHandler(e) {
 //line scroll
 TweenMax.from(".find-out-more-container hr", 2, {width:0}, {width:100}).repeat(1000);
 
+// paint animation
 TweenMax.defaultEase = Power0.easeNone;
 ;
 var img = document.getElementsByClassName(".logo-main img");
-var controller = new ScrollMagic.Controller();
-var tl = new TimelineMax({ paused: true });
+var controller = new ScrollMagic.Controller({vertical: false});
+var tl = new TimelineMax();
 
 // create timeline
 // this could also be created in a loop
-tl.set(".logo-main img", {transformOrigin:"0% 100%"});
-tl.fromTo(".logo-main img", 2.2, {width:"0%"}, {width:"100%",  ease:Power0.easeNone, repeat:-1, repeatDelay:2})
+tl.from(".logo-main img", 4, {width: "0%",height: "295px"});
+tl.to(".logo-main img", 4, {width: "150%", height: "295px"});
+
 new ScrollMagic.Scene({
   triggerElement: "#section01",
   triggerHook: "onLeave",
-  duration: "400%"
+  duration: "2000"
 })
-  .setPin("#section01")
+//   .setPin("js-wrapper")
   .setTween(tl)
   .addIndicators({
     colorTrigger: "#000",
