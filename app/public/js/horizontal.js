@@ -38,7 +38,8 @@ TweenMax.from(".find-out-more-container hr", 2, {width:0}, {width:100}).repeat(1
       .from(".txt-1", .5, {opacity: 0, y: 50})
       .from(".txt-2", .3, {opacity: 0, y: 50})
       .from(".txt-3", .3, {opacity: 0, y: 50})
-      .from(".txt-4", .3, {opacity: 0, y: 50})
+      .from(".txt-4", .3, {opacity: 0, y: 50}) 
+      .from(".logo-main", 1, { scaleX: 0, transformOrigin: "left" }, "-=0.5");
     
 // paint animation
 TweenMax.defaultEase = Power0.easeNone;
@@ -49,8 +50,8 @@ var tl = new TimelineMax();
 
 // create timeline
 // this could also be created in a loop
-tl.from(".logo-main img", 4, {width: "0%",height: "295px"});
-tl.to(".logo-main img", 4, {width: "120%", height: "295px"});
+// tl.from(".logo-main img", 4, {scaleX:0, transformOrigin:"right"}, "reveal");
+// tl.to(".logo-main img", 4, {width: "120%", height: "295px"});
 
 new ScrollMagic.Scene({
   triggerElement: "#section01",

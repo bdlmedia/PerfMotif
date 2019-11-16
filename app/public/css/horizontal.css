@@ -319,4 +319,31 @@ html ::-webkit-scrollbar {
     align-items: center;
 }
 
+.s2-img1-cont {
+max-width: 13em;  
+display: flex;
+  align-items: center;
+  -webkit-justify-content: center;
+  /* Safari */
+  justify-content: center;
+}
+.s2-img2-cont {
+ max-width: 13em;  
+ display: flex;
+  align-items: center;
+  -webkit-justify-content: center;
+  /* Safari */
+  justify-content: center;
+}
+
+.s2-img1-cont img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.s2-img2-cont img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
