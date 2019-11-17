@@ -47,7 +47,8 @@ TweenMax.defaultEase = Power0.easeNone;
 var controller = new ScrollMagic.Controller({vertical: false});
 var tl = new TimelineMax();
 tl
-.from(".s2-img2-cont", 2, {x: 100});
+.from(".s2-img2-cont", 2, {x: 100})
+.from(".s3-skew", 2, {x: -50});
 
 new ScrollMagic.Scene({
   triggerElement: "#section02",
@@ -61,4 +62,3 @@ new ScrollMagic.Scene({
     colorEnd: "#000",
   })
   .addTo(controller);
-
