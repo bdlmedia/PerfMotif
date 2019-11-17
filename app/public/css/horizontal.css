@@ -298,13 +298,14 @@ html ::-webkit-scrollbar {
 .s2-mid-text {
     display: flex;
     height: 100%;
-    width: 40em;
+    width: 25em;
     align-items: center;
     margin-top: -15em;
     /* padding-left: 7em;
     padding-right: 7em; */
     font-size: .85em;
     line-height: 1.5em;
+    margin-left: -15em;
 }
 
 .s2-mid-text span {
@@ -313,11 +314,11 @@ html ::-webkit-scrollbar {
 }
 
 .s2-right-img {
-    width: 40em;
+    width: 55em;
     height: 100%;
     display: flex;
     flex-flow: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -328,6 +329,7 @@ display: flex;
   -webkit-justify-content: center;
   /* Safari */
   justify-content: center;
+  margin-left: 8em;
 }
 .s2-img2-cont {
   max-width: 20em; 
@@ -335,7 +337,7 @@ display: flex;
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
-    margin-left: -30em;
+    margin-left: -7em;
     margin-top: -3em;
 }
 
@@ -352,3 +354,49 @@ display: flex;
     box-shadow: 0.75rem 0.85rem 1.75rem 0 rgba(0,0,0,.32);
 }
 
+.s3-cont {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: #00e7f7;
+}
+
+.s3-skew {
+    position: absolute;
+    top: 0;
+    left: -90em;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: -1;
+    contain: strict;
+    min-height: 100vh;
+    -webkit-transform: skewY(-60deg);
+    -moz-transform: skewY(-60deg);
+    -ms-transform: skewY(-60deg);
+    -o-transform: skewY(-60deg);
+    transform: skewY(-60deg);
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -o-transform-origin: center center;
+    transform-origin: center center;
+    background: #00e7f7;
+}
+
+.s3-services-cont {
+    width: 30em;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s3-services-cont h3 {
+    font-size: 6em;
+    color: #fff;
+    text-shadow: 2px 2px 4px #c8c8c8;
+    margin-top: -1.5em;
+}
