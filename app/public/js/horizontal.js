@@ -13,7 +13,7 @@ function MouseWheelHandler(e) {
 
     // cross-browser wheel delta
     var e = window.event || e;
-    var delta = - 12 * (Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail))));
+    var delta = - 30 * (Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail))));
 
     var pst = $('#js-wrapper').scrollLeft() + delta;
 
