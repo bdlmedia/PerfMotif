@@ -42,7 +42,7 @@ TweenMax.from(".find-out-more-container hr", 2, {width:0}, {width:100}).repeat(1
       .from(".txt-4", .3, {opacity: 0, y: 50});
       // .from(".logo-main", 1, { scaleX: 0, transformOrigin: "left" }, "-=0.5");
     
-TweenMax.defaultEase = Linear.easeNone;
+TweenMax.defaultEase = Power0.easeNone;
 ;
 var controller = new ScrollMagic.Controller({vertical: false});
 var tl = new TimelineMax();
@@ -66,7 +66,7 @@ new ScrollMagic.Scene({
 
 // portfolio animations
 
-TweenMax.defaultEase = Linear.easeNone;
+TweenMax.defaultEase = Power0.easeNone;
 ;
 var controller = new ScrollMagic.Controller({vertical: false});
 var tl2 = new TimelineMax();
@@ -88,7 +88,7 @@ new ScrollMagic.Scene({
 
 // blog animations
 
-TweenMax.defaultEase = Linear.easeNone;
+TweenMax.defaultEase = Power0.easeNone;
 ;
 var controller = new ScrollMagic.Controller({vertical: false});
 var tl3 = new TimelineMax();
@@ -109,7 +109,7 @@ new ScrollMagic.Scene({
   .addTo(controller);
 
 // contact animations
-TweenMax.defaultEase = Linear.easeNone;
+TweenMax.defaultEase = Power0.easeNone;
 ;
 var controller = new ScrollMagic.Controller({vertical: false});
 var tl4 = new TimelineMax();
