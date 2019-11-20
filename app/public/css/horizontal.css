@@ -117,16 +117,17 @@ html ::-webkit-scrollbar {
   }
   
   .logo-main {
-      width: 816px;
-      height:295px;
-      margin-top: -4em;
+    min-width: 50em;
+    margin-top: 4em;
+    position: relative;
+    min-height: 33em;
   }
   
-  .logo-main img {
+  /* .logo-main img {
     max-width: 120%;
     width: 120%;
     z-index: 1;
-  }
+  } */
 
   .hero-txt {
     padding-left: 5em;
@@ -149,8 +150,8 @@ html ::-webkit-scrollbar {
     position: relative;
     max-width: 60em;
     min-height: 100vh;
-    justify-content: center;
-    margin-left: 5em;
+    justify-content: space-between;
+    margin-left: 0em;
 }
 
 .find-out-more-container {
@@ -158,6 +159,8 @@ html ::-webkit-scrollbar {
     flex-flow: row nowrap;
     align-items: center;
     margin-left: 4em;
+    bottom: 0;
+    margin-bottom: 5em;
 }
 
 .find-out-more-container p {

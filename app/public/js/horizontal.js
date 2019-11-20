@@ -38,10 +38,9 @@ TweenMax.from(".find-out-more-container hr", 2, {width:0}, {width:100}).repeat(1
       .from(".txt-1", .5, {opacity: 0, y: 50})
       .from(".txt-2", .3, {opacity: 0, y: 50})
       .from(".txt-3", .3, {opacity: 0, y: 50})
-      .from(".txt-4", .3, {opacity: 0, y: 50}) 
-      .from(".logo-main", 1, { scaleX: 0, transformOrigin: "left" }, "-=0.5");
+      .from(".txt-4", .3, {opacity: 0, y: 50});
+      // .from(".logo-main", 1, { scaleX: 0, transformOrigin: "left" }, "-=0.5");
     
-// 
 TweenMax.defaultEase = Power0.easeNone;
 ;
 var controller = new ScrollMagic.Controller({vertical: false});
