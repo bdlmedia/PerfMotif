@@ -25,8 +25,9 @@ function MouseWheelHandler(e) {
 
     $('#js-wrapper').scrollLeft(pst);
 
-    return false;
+    return false;    
 }
+
 });
 
 //line scroll
@@ -41,7 +42,7 @@ TweenMax.from(".find-out-more-container hr", 2, {width:0}, {width:100}).repeat(1
       .from(".txt-4", .3, {opacity: 0, y: 50});
       // .from(".logo-main", 1, { scaleX: 0, transformOrigin: "left" }, "-=0.5");
     
-TweenMax.defaultEase = Power0.easeNone;
+TweenMax.defaultEase = Linear.easeNone;
 ;
 var controller = new ScrollMagic.Controller({vertical: false});
 var tl = new TimelineMax();
@@ -65,7 +66,7 @@ new ScrollMagic.Scene({
 
 // portfolio animations
 
-TweenMax.defaultEase = Power0.easeNone;
+TweenMax.defaultEase = Linear.easeNone;
 ;
 var controller = new ScrollMagic.Controller({vertical: false});
 var tl2 = new TimelineMax();
@@ -87,7 +88,7 @@ new ScrollMagic.Scene({
 
 // blog animations
 
-TweenMax.defaultEase = Power0.easeNone;
+TweenMax.defaultEase = Linear.easeNone;
 ;
 var controller = new ScrollMagic.Controller({vertical: false});
 var tl3 = new TimelineMax();
@@ -108,7 +109,7 @@ new ScrollMagic.Scene({
   .addTo(controller);
 
 // contact animations
-TweenMax.defaultEase = Power0.easeNone;
+TweenMax.defaultEase = Linear.easeNone;
 ;
 var controller = new ScrollMagic.Controller({vertical: false});
 var tl4 = new TimelineMax();
@@ -127,3 +128,32 @@ new ScrollMagic.Scene({
     colorEnd: "#000",
   })
   .addTo(controller);
+
+// repeat animations
+
+// var svgns = document.getElementsByClassName("icon-view");
+
+// function createElement(name, parent, options) {
+
+//   var element = document.createElementNS(svgns, name);
+  
+//   if (parent) {
+//     parent.appendChild(element);
+//   }
+  
+//   if (options) {
+//     TweenLite.set(element, options);
+//   }
+  
+//   return element;
+// }
+
+// function lerp(start, end, ratio) {
+//   return start + (end - start) * ratio;
+// }
+
+// function random(min, max) {
+//   if (max == null) { max = min; min = 0; }
+//   if (min > max) { var tmp = min; min = max; max = tmp; }
+//   return min + (max - min) * Math.random();
+// }
