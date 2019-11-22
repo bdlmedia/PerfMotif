@@ -433,21 +433,22 @@ display: flex;
 }
 
 .s4-cont {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: flex;
-    flex-flow: row nowrap;
-    background-color: #fafafa;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: #fafafa;
+  z-index: 2;
 }
 
 .s4-txt-cont {
-    width: 40em;
-    height: 100%;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
+  width: 40em;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .s4-txt-cont h3 {
@@ -474,27 +475,28 @@ display: flex;
 }
 
 .s4-right-cont {
-    width: 60em;
-    height: 100%;
-    display: flex;
-    position: relative;
+  width: 60em;
+  height: 100%;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
 }
 
 .s4-svg-cont {
-    width: 100%;
-    background-image: url(../img/database.jpg);
-    background-size: cover;
-    background-position: center 100%;
-    will-change: transform;
-    position: absolute;
-    right: -13em;
+  width: 85%;
+  background-image: url(../img/database.jpg);
+  background-size: cover;
+  background-position: center 100%;
+  will-change: transform;
+  right: 0em;
+  z-index: 0;
 }
 
 .s4-svg-mask {
-    position: relative;
-    width: 100%;
-    color: #fafafa;
-    margin-top: -12em;
+  position: relative;
+  width: 132%;
+  color: #fafafa;
+  margin-top: -12em;
 }
 
 .exit-btn {
@@ -516,26 +518,26 @@ display: flex;
 }
 
 .s4-skew {
-    position: absolute;
-    top: 0;
-    left: -35em;
-    right: -90em;
-    bottom: 0;
-    overflow: hidden;
-    z-index: 1;
-    contain: strict;
-    min-height: 180vh;
-    -webkit-transform: skewY(-65deg);
-    -moz-transform: skewY(-65deg);
-    -ms-transform: skewY(-65deg);
-    -o-transform: skewY(-65deg);
-    transform: skewY(-65deg);
-    -webkit-transform-origin: center center;
-    -moz-transform-origin: center center;
-    -ms-transform-origin: center center;
-    -o-transform-origin: center center;
-    transform-origin: center center;
-    background: #fafafa;
+  position: absolute;
+  top: 0;
+  left: -35em;
+  right: -90em;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 0;
+  contain: strict;
+  min-height: 180vh;
+  -webkit-transform: skewY(-65deg);
+  -moz-transform: skewY(-65deg);
+  -ms-transform: skewY(-65deg);
+  -o-transform: skewY(-65deg);
+  transform: skewY(-65deg);
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  -o-transform-origin: center center;
+  transform-origin: center center;
+  background: #fafafa;
 }
 
 .s5-cont {
