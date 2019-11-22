@@ -612,3 +612,11 @@ display: flex;
     text-shadow: 2px 2px 4px #cccccc;
     z-index: 2;
 }
+
+.s6-form-container {
+  min-width: 500px;
+  height: 69%;
+  overflow: hidden;
+  margin-top: 7em;
+  margin-left: 7em;
+}
