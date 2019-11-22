@@ -71,44 +71,6 @@ for (var i = 0; i < iconGroupThree.length; i++) {
 
 });
 
-// animate icons
-
-TweenMax.to(".icon-view-1", 275, {
-  ease: Linear.easeNone,
-  x: "+=550",
-  modifiers: {
-    x: function(x) {
-      return x % 550; 
-    }
-  },
-  repeat: -1
-});
-
-TweenMax.to(".icon-view-2", 230, {
-  ease: Linear.easeNone,
-  x: "-=550", //move each box 500px to right
-  modifiers: {
-    x: function(x) {
-      return x % 550; //force x value to be between 0 and 500 using modulus
-    }
-  },
-  repeat: -1
-});
-
-TweenMax.to(".icon-view-3", 200, {
-  ease: Linear.easeNone,
-  x: "+=550", //move each box 500px to right
-  modifiers: {
-    x: function(x) {
-      return x % 550; //force x value to be between 0 and 500 using modulus
-    }
-  },
-  repeat: -1
-});
-
-//toggle overflow
-$overflow.on("change", applyOverflow);
-
 //line scroll
 TweenMax.from(".find-out-more-container hr", 2, {width:0}, {width:100}).repeat(1000);
 
@@ -208,33 +170,38 @@ new ScrollMagic.Scene({
   })
   .addTo(controller);
 
-
-
-// repeat animations
-
-// var svgns = document.getElementsByClassName("icon-view");
-
-// function createElement(name, parent, options) {
-
-//   var element = document.createElementNS(svgns, name);
   
-//   if (parent) {
-//     parent.appendChild(element);
-//   }
-  
-//   if (options) {
-//     TweenLite.set(element, options);
-//   }
-  
-//   return element;
-// }
+// animate icons
 
-// function lerp(start, end, ratio) {
-//   return start + (end - start) * ratio;
-// }
+TweenMax.to(".icon-view-1", 275, {
+  x: "+=550",
+  modifiers: {
+    x: function(x) {
+      return x % 550; 
+    }
+  },
+  repeat: -1
+});
 
-// function random(min, max) {
-//   if (max == null) { max = min; min = 0; }
-//   if (min > max) { var tmp = min; min = max; max = tmp; }
-//   return min + (max - min) * Math.random();
-// }
+TweenMax.to(".icon-view-2", 230, {
+  x: "-=550", //move each box 500px to right
+  modifiers: {
+    x: function(x) {
+      return x % 550; //force x value to be between 0 and 500 using modulus
+    }
+  },
+  repeat: -1
+});
+
+TweenMax.to(".icon-view-3", 200, {
+  x: "+=550", //move each box 500px to right
+  modifiers: {
+    x: function(x) {
+      return x % 550; //force x value to be between 0 and 500 using modulus
+    }
+  },
+  repeat: -1
+});
+
+//toggle overflow
+$overflow.on("change", applyOverflow);
