@@ -28,7 +28,86 @@ function MouseWheelHandler(e) {
     return false;    
 }
 
+
+//randomly place icons
+var iconGroupOne = $(".icon-view-1").children();
+var iconGroupTwo = $(".icon-view-2").children();
+var iconGroupThree = $(".icon-view-3").children();
+
+console.log(iconGroupOne);
+console.log(iconGroupTwo);
+console.log(iconGroupThree);
+
+for (var i = 0; i < iconGroupOne.length; i++) {
+  // console.log(iconGroupOne[i]);
+  // let overlapping = false;
+  // let canvasWidth = $(".icon-view-1").width();
+  // console.log('canvas width' + canvasWidth);
+  let canvasHeight = $(".icon-view-1").height();
+  // console.log('canvas height' + canvasHeight);
+  let y = Math.floor(Math.random() * (canvasHeight + 1)) +1;
+  // console.log('y' + y);
+  let eachIcon = iconGroupOne[i];
+  eachIcon.style.top = y;
+  eachIcon.style.position = 'relative';
+}
+
+for (var i = 0; i < iconGroupTwo.length; i++) {
+  let canvasHeight = $(".icon-view-2").height();
+  let y = Math.floor(Math.random() * (canvasHeight + 1)) + 1;
+  let eachIcon = iconGroupTwo[i];
+  eachIcon.style.top = y;
+  eachIcon.style.position = 'relative';
+}
+
+for (var i = 0; i < iconGroupThree.length; i++) {
+  console.log(iconGroupThree[i]);
+  let canvasHeight = $(".icon-view-3").height();
+  let y = Math.floor(Math.random() * (canvasHeight + 1)) + 1;
+  let eachIcon = iconGroupThree[i];
+  eachIcon.style.top = y;
+  eachIcon.style.position = 'relative';
+}
+
 });
+
+// animate icons
+
+TweenMax.to(".icon-view-1", 275, {
+  ease: Linear.easeNone,
+  x: "+=550",
+  modifiers: {
+    x: function(x) {
+      return x % 550; 
+    }
+  },
+  repeat: -1
+});
+
+TweenMax.to(".icon-view-2", 230, {
+  ease: Linear.easeNone,
+  x: "-=550", //move each box 500px to right
+  modifiers: {
+    x: function(x) {
+      return x % 550; //force x value to be between 0 and 500 using modulus
+    }
+  },
+  repeat: -1
+});
+
+TweenMax.to(".icon-view-3", 200, {
+  ease: Linear.easeNone,
+  x: "+=550", //move each box 500px to right
+  modifiers: {
+    x: function(x) {
+      return x % 550; //force x value to be between 0 and 500 using modulus
+    }
+  },
+  repeat: -1
+});
+
+//toggle overflow
+$overflow.on("change", applyOverflow);
 
 //line scroll
 TweenMax.from(".find-out-more-container hr", 2, {width:0}, {width:100}).repeat(1000);
@@ -128,6 +207,8 @@ new ScrollMagic.Scene({
     colorEnd: "#000",
   })
   .addTo(controller);
+
+
 
 // repeat animations
 
