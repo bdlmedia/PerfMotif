@@ -42,20 +42,20 @@ html ::-webkit-scrollbar {
     position: relative;
   }
   #section01 {
-    background: #fff;
+    background: #fafafa;
   }
   #section02 {
-    background: #fff;
+    background: #fafafa;
     z-index: -1;
   }
   #section03 {
-    background: #fff;
+    background: #fafafa;
   }
   #section04 {
-    background: #fff;
+    background: #fafafa;
   }
   #section05 {
-    background: #fff;
+    background: #fafafa;
   }
   #section06 {
     z-index: 10;
@@ -397,7 +397,7 @@ display: flex;
 .s3-skew {
     position: absolute;
     top: 0;
-    left: -90em;
+    left: -93em;
     right: 0;
     bottom: 0;
     overflow: hidden;
