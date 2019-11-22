@@ -98,11 +98,11 @@ new ScrollMagic.Scene({
   duration: "1000"
 })
   .setTween(tl)
-  .addIndicators({
-    colorTrigger: "#000",
-    colorStart: "#000",
-    colorEnd: "#000",
-  })
+  // .addIndicators({
+  //   colorTrigger: "#000",
+  //   colorStart: "#000",
+  //   colorEnd: "#000",
+  // })
   .addTo(controller);
 
 // portfolio animations
@@ -120,11 +120,11 @@ new ScrollMagic.Scene({
   duration: "1000"
 })
   .setTween(tl2)
-  .addIndicators({
-    colorTrigger: "#000",
-    colorStart: "#000",
-    colorEnd: "#000",
-  })
+  // .addIndicators({
+  //   colorTrigger: "#000",
+  //   colorStart: "#000",
+  //   colorEnd: "#000",
+  // })
   .addTo(controller);
 
 // blog animations
@@ -142,11 +142,11 @@ new ScrollMagic.Scene({
   duration: "300"
 })
   .setTween(tl3)
-  .addIndicators({
-    colorTrigger: "#000",
-    colorStart: "#000",
-    colorEnd: "#000",
-  })
+  // .addIndicators({
+  //   colorTrigger: "#000",
+  //   colorStart: "#000",
+  //   colorEnd: "#000",
+  // })
   .addTo(controller);
 
 // contact animations
@@ -163,11 +163,11 @@ new ScrollMagic.Scene({
   duration: "400"
 })
   .setTween(tl4)
-  .addIndicators({
-    colorTrigger: "#000",
-    colorStart: "#000",
-    colorEnd: "#000",
-  })
+  // .addIndicators({
+  //   colorTrigger: "#000",
+  //   colorStart: "#000",
+  //   colorEnd: "#000",
+  // })
   .addTo(controller);
 
   
