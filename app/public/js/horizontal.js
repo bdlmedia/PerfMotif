@@ -69,6 +69,18 @@ for (var i = 0; i < iconGroupThree.length; i++) {
   eachIcon.style.position = 'relative';
 }
 
+document.querySelector("#aniBtn").addEventListener("mouseenter", doCoolStuff);
+document.querySelector("#aniBtn").addEventListener("mouseleave", doCoolStuff);
+
+let tl5 = new TimelineMax();
+tl5.to(document.querySelector("#aniBtn").children[0], 0.4, {attr:{width:100, fill:"#00e7f7"}, autoAlpha: 0.8, ease: Elastic.easeOut.config(1, 1)});
+tl5.to("text", 0.2, {fill:"#fff", ease:Linear.easeNone}, 0);
+tl5.reversed(true);
+
+function doCoolStuff() {
+    tl5.reversed(!tl5.reversed());
+}
+
 });
 
 //line scroll

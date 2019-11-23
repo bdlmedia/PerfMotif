@@ -472,6 +472,16 @@ display: flex;
   margin-left: -0.5em;
 }
 
+.s3-btm-card {
+  display: flex;
+  flex-flow: column;
+}
+
+.s3-btn-cont {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .s4-cont {
   width: 100%;
   height: 100%;
@@ -480,6 +490,11 @@ display: flex;
   flex-flow: row nowrap;
   background-color: #fafafa;
   z-index: 2;
+}
+
+#aniBtn {
+  overflow: visible;
+  cursor: pointer;
 }
 
 .s4-txt-cont {
