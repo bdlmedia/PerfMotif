@@ -80,7 +80,6 @@ tl5.reversed(true);
 function doCoolStuff() {
     tl5.reversed(!tl5.reversed());
 }
-
 });
 
 //line scroll
