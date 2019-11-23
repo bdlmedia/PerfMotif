@@ -418,11 +418,12 @@ display: flex;
 }
 
 .s3-services-cont {
-    width: 30em;
+    width: 40em;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
 }
 
 .s3-services-cont h3 {
@@ -430,6 +431,45 @@ display: flex;
     color: #fff;
     text-shadow: 2px 2px 4px #c8c8c8;
     margin-top: -1.5em;
+    margin-left: 2em;
+}
+
+.s3-left-card-cont {
+  display: flex;
+  flex-flow: row nowrap;
+  position: absolute;
+  width: 50em;
+  justify-content: space-between;
+  margin-top: 8em;
+  margin-left: -6em;
+}
+
+.s3-service-card {
+    width: 15em;
+    height: 12em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    box-shadow: 0.75rem 0.85rem 1.75rem 0 rgba(0,0,0,.32);
+    padding: 1.1em;
+    background: #fafafa;
+}
+
+.s3-service-card h4 {
+  font-size: 0.9em;
+  margin-left: 10px;
+}
+
+.s3-service-card p {
+  font-size: .65em;
+}
+
+.s3-top-card {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin-left: -0.5em;
 }
 
 .s4-cont {
@@ -515,6 +555,11 @@ display: flex;
     margin-top: 1em;
     margin-right: 1em;
     box-shadow: 0.75rem 0.85rem 1.75rem 0 rgba(0,0,0,.32);
+}
+
+.exit-btn:hover {
+  background-color: #ff8562;
+  transition: all .5s ease-out;
 }
 
 .s4-skew {
