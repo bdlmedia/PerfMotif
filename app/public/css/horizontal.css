@@ -365,11 +365,11 @@ display: flex;
 .s2-img2-cont {
   max-width: 20em; 
   display: flex;
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    margin-left: -7em;
-    margin-top: -3em;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: -7em;
+  margin-top: -3em;
 }
 
 .s2-img1-cont img {
@@ -392,6 +392,17 @@ display: flex;
     display: flex;
     flex-flow: row nowrap;
     background-color: #00e7f7;
+}
+.s3-cont::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 5em;
+  height: 100%;
+  background: #00e7f7;
+  right: 0;
+  margin-right: -5em;
+  z-index: 3;
 }
 
 .s3-skew {
@@ -431,7 +442,12 @@ display: flex;
     color: #fff;
     text-shadow: 2px 2px 4px #c8c8c8;
     margin-top: -1.5em;
-    margin-left: 2em;
+}
+
+.s3-ind-title-cont {
+  position: absolute;
+  font-size: 1em;
+  color: #fafafa;
 }
 
 .s3-left-card-cont {
@@ -442,18 +458,52 @@ display: flex;
   justify-content: space-between;
   margin-top: 8em;
   margin-left: -6em;
+  height: 50%;
+}
+
+.s3-r-inner-row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  margin-top: 8em;
+}
+
+.s3-ind-cont {
+  display: flex;
+  flex-flow: column;
+  width: 50%;
+}
+
+.s3-inner-ind {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  align-content: space-around;
+  justify-content: center;
+  align-items: center;
+}
+
+.s3-ind-card {
+  display: flex;
+  align-content: center;
+  background: #fafafa;
+  border-radius: 5px;
+  width: 20em;
+  box-shadow: 0.75rem 0.85rem 1.75rem 0 rgba(0,0,0,.32);
 }
 
 .s3-service-card {
-    width: 15em;
-    height: 12em;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    box-shadow: 0.75rem 0.85rem 1.75rem 0 rgba(0,0,0,.32);
-    padding: 1.1em;
-    background: #fafafa;
+  width: 15em;
+  height: 17em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  box-shadow: 0.75rem 0.85rem 1.75rem 0 rgba(0,0,0,.32);
+  padding: 1.1em;
+  background: #fafafa;
+  z-index: 4;
+  border-radius: 5px;
 }
 
 .s3-service-card h4 {
@@ -480,6 +530,17 @@ display: flex;
 .s3-btn-cont {
   display: flex;
   justify-content: flex-end;
+}
+
+.s3-right-card-cont {
+  display: flex;
+  flex-flow: column;
+  position: absolute;
+  width: 50em;
+  justify-content: space-between;
+  margin-top: 0em;
+  margin-left: 45em;
+  height: 100%;
 }
 
 .s4-cont {
