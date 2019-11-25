@@ -220,6 +220,7 @@ TweenMax.defaultEase = Power0.easeNone;
 var controller6 = new ScrollMagic.Controller({vertical: false});
 var tl6 = new TimelineMax();
 tl6
+.to('#homeTitle', 0.4, {color: '#ff3800'})
 .to(".tl-span", 2, {width:'100%'});
 
 new ScrollMagic.Scene({
@@ -228,11 +229,11 @@ new ScrollMagic.Scene({
   duration: "100%",
 })
   .setTween(tl6)
-  .addIndicators({
-    colorTrigger: "#000",
-    colorStart: "#000",
-    colorEnd: "#000",
-  })
+  // .addIndicators({
+  //   colorTrigger: "#000",
+  //   colorStart: "#000",
+  //   colorEnd: "#000",
+  // })
   .addTo(controller6);
 
 
@@ -241,6 +242,7 @@ new ScrollMagic.Scene({
   var controller7 = new ScrollMagic.Controller({vertical: false});
   var tl7 = new TimelineMax();
   tl7
+  .to('#aboutTitle', 0.4, {color: '#ff3800'})
   .to(".tl-span2", 2, {width:'100%'});
   
   new ScrollMagic.Scene({
@@ -249,11 +251,11 @@ new ScrollMagic.Scene({
     duration: "100%",
   })
     .setTween(tl7)
-    .addIndicators({
-      colorTrigger: "#000",
-      colorStart: "#000",
-      colorEnd: "#000",
-    })
+    // .addIndicators({
+    //   colorTrigger: "#000",
+    //   colorStart: "#000",
+    //   colorEnd: "#000",
+    // })
     .addTo(controller7);
 
     TweenMax.defaultEase = Power0.easeNone;
@@ -261,6 +263,7 @@ new ScrollMagic.Scene({
     var controller8 = new ScrollMagic.Controller({vertical: false});
     var tl8 = new TimelineMax();
     tl8
+    .to('#servTitle', 0.4, {color: '#ff3800'})
     .to(".tl-span3", 2, {width:'100%'});
     
     new ScrollMagic.Scene({
@@ -269,11 +272,11 @@ new ScrollMagic.Scene({
       duration: "100%",
     })
       .setTween(tl8)
-      .addIndicators({
-        colorTrigger: "#000",
-        colorStart: "#000",
-        colorEnd: "#000",
-      })
+      // .addIndicators({
+      //   colorTrigger: "#000",
+      //   colorStart: "#000",
+      //   colorEnd: "#000",
+      // })
       .addTo(controller8);
 
       TweenMax.defaultEase = Power0.easeNone;
@@ -281,19 +284,19 @@ new ScrollMagic.Scene({
       var controller9 = new ScrollMagic.Controller({vertical: false});
       var tl9 = new TimelineMax();
       tl9
-      .to(".tl-span4", 2, {width:'100%'});
-      
+      .to('#portTitle', 0.4, {color: '#ff3800'})
+      .to(".tl-span4", 2, {width:'100%'})
       new ScrollMagic.Scene({
         triggerElement: "#section04",
         triggerHook: 'onLeave',
         duration: "100%",
       })
         .setTween(tl9)
-        .addIndicators({
-          colorTrigger: "#000",
-          colorStart: "#000",
-          colorEnd: "#000",
-        })
+        // .addIndicators({
+        //   colorTrigger: "#000",
+        //   colorStart: "#000",
+        //   colorEnd: "#000",
+        // })
         .addTo(controller9);
 
         TweenMax.defaultEase = Power0.easeNone;
@@ -301,19 +304,21 @@ new ScrollMagic.Scene({
         var controller10 = new ScrollMagic.Controller({vertical: false});
         var tl10 = new TimelineMax();
         tl10
-        .to(".tl-span5", 2, {width:'100%'});
-        
+        .to('#blogTitle', 0.4, {color: '#ff3800'})
+        .to(".tl-span5", 2, {width:'100%'})
+        .to('#contactTitle', 2, {color: '#ff3800'});
+
         new ScrollMagic.Scene({
           triggerElement: "#section05",
           triggerHook: 'onLeave',
           duration: "100%",
         })
           .setTween(tl10)
-          .addIndicators({
-            colorTrigger: "#000",
-            colorStart: "#000",
-            colorEnd: "#000",
-          })
+          // .addIndicators({
+          //   colorTrigger: "#000",
+          //   colorStart: "#000",
+          //   colorEnd: "#000",
+          // })
           .addTo(controller10);
 
 
