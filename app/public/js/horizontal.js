@@ -1,6 +1,7 @@
 // ENABLE ONLY VERTICAL SCROLL
 
 $( document ).ready(function() {
+
 var scroller = {};
 scroller.e = document.getElementById("js-wrapper");
 
@@ -69,6 +70,8 @@ for (var i = 0; i < iconGroupThree.length; i++) {
   eachIcon.style.position = 'relative';
 }
 
+// button animations
+
 document.querySelector("#aniBtn").addEventListener("mouseenter", doCoolStuff);
 document.querySelector("#aniBtn").addEventListener("mouseleave", doCoolStuff);
 
@@ -80,6 +83,23 @@ tl5.reversed(true);
 function doCoolStuff() {
     tl5.reversed(!tl5.reversed());
 }
+
+// modal timeline
+// let tl6 = new TimelineMax();
+
+$("#modal01-btn").click(function() {
+  $('#modal01').css({
+    display: 'flex'
+  });
+});
+
+$(".modal-top-cont span").click(function() {
+  $('.modal-container').css({
+    display: 'none'
+  });
+});
+
+
 });
 
 //line scroll

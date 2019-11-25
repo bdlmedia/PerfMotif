@@ -204,7 +204,7 @@ html ::-webkit-scrollbar {
     position: fixed;
     right: 0;
     bottom: 20px;
-    z-index: 90;
+    z-index: 9;
     pointer-events: none;
     color: #888;
     width: 100%;
@@ -478,18 +478,25 @@ display: flex;
   display: flex;
   flex-flow: column;
   height: 100%;
-  align-content: space-around;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
 .s3-ind-card {
   display: flex;
   align-content: center;
+  justify-content: space-between;
+  align-items: center;
   background: #fafafa;
   border-radius: 5px;
-  width: 20em;
+  width: 23em;
   box-shadow: 0.75rem 0.85rem 1.75rem 0 rgba(0,0,0,.32);
+}
+
+.s3-ind-card h4 {
+  font-size: 0.7em;
+  line-height: 2.7em;
+  margin-left: 1em;
 }
 
 .s3-service-card {
@@ -530,6 +537,7 @@ display: flex;
 .s3-btn-cont {
   display: flex;
   justify-content: flex-end;
+  height: 35px;
 }
 
 .s3-right-card-cont {
@@ -740,4 +748,66 @@ display: flex;
   overflow: hidden;
   margin-top: 7em;
   margin-left: 7em;
+}
+
+.modal-container {
+  min-width: 100%;
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  background: rgba(119,119,119, 0.7);
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+.modal-inner {
+  min-width: 80%;
+  width: 80%;
+  min-height: 100%;
+  height: 100%;
+  background: #fafafa;
+  z-index: 1001;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  position: absolute;
+  box-shadow: 0.75rem 0.85rem 1.75rem 0 rgba(0,0,0,.32);
+  overflow-y: scroll;
+  padding: 2em;
+}
+
+.modal-top-cont {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 5em;
+  align-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  z-index: 1002;
+}
+
+.modal-top-cont span {
+  color: #fff;
+  font-size: 3.5em;
+  font-weight: 200;
+  text-shadow: 2px 2px 4px #c8c8c8;
+  margin-right: 0.5em;
+
+}
+
+.modal-top-cont span:hover {
+  color: #ff3800;
+  text-shadow: 2px 2px 4px #fafafa;
+  cursor: pointer;
+}
+
+.modal-inner-top h3 {
+  font-size: 2em;
 }
