@@ -1,7 +1,6 @@
 // ENABLE ONLY VERTICAL SCROLL
 
 $( document ).ready(function() {
-
 var scroller = {};
 scroller.e = document.getElementById("js-wrapper");
 
@@ -29,15 +28,10 @@ function MouseWheelHandler(e) {
     return false;    
 }
 
-
 //randomly place icons
 var iconGroupOne = $(".icon-view-1").children();
 var iconGroupTwo = $(".icon-view-2").children();
 var iconGroupThree = $(".icon-view-3").children();
-
-console.log(iconGroupOne);
-console.log(iconGroupTwo);
-console.log(iconGroupThree);
 
 for (var i = 0; i < iconGroupOne.length; i++) {
   // console.log(iconGroupOne[i]);
@@ -62,7 +56,7 @@ for (var i = 0; i < iconGroupTwo.length; i++) {
 }
 
 for (var i = 0; i < iconGroupThree.length; i++) {
-  console.log(iconGroupThree[i]);
+  // console.log(iconGroupThree[i]);
   let canvasHeight = $(".icon-view-3").height();
   let y = Math.floor(Math.random() * (canvasHeight + 1)) + 1;
   let eachIcon = iconGroupThree[i];
@@ -84,9 +78,6 @@ function doCoolStuff() {
     tl5.reversed(!tl5.reversed());
 }
 
-// modal timeline
-// let tl6 = new TimelineMax();
-
 $("#modal01-btn").click(function() {
   $('#modal01').css({
     display: 'flex'
@@ -97,8 +88,32 @@ $(".modal-top-cont span").click(function() {
   $('.modal-container').css({
     display: 'none'
   });
+  
 });
+  // menu bar animation
+  // $(document).scroll(function() {
+  //   var sectWidth = $('.section').width();
+  //   console.log("on scroll get width  " + sectWidth);
+  //    alert("youre scrolling you cunt");
+  //  });
 
+// function progress() {
+
+//   var windowScrollTop = $(window).scrollTop();
+//   var docHeight = $(document).height();
+//   var windowHeight = $(window).height();
+//   var progress = (windowScrollTop / (docHeight - windowHeight)) * 100;
+//   var $bgColor = progress > 99 ? '#4db792' : '#EF4E31';
+//   var $textColor = progress > 99 ? '#fff' : '#333';
+
+//   $('.progress .bar').width(progress + '%').css({ backgroundColor: $bgColor });
+//   $('h1').text(Math.round(progress) + '%').css({ color: $textColor });
+//   $('.fill').height(progress + '%').css({ backgroundColor: $bgColor });
+// }
+
+// progress();
+
+// $(document).on('scroll', progress);
 
 });
 
@@ -121,7 +136,6 @@ var tl = new TimelineMax();
 tl
 .from(".s2-img2-cont", 4, {x: 50})
 .from(".s3-skew", 2, {x: -80})
-// .from(".s4-svg-cont", 4, {x: 100});
 
 new ScrollMagic.Scene({
   triggerElement: "#section02",
@@ -137,7 +151,6 @@ new ScrollMagic.Scene({
   .addTo(controller);
 
 // portfolio animations
-
 TweenMax.defaultEase = Power0.easeNone;
 ;
 var controller = new ScrollMagic.Controller({vertical: false});
@@ -159,7 +172,6 @@ new ScrollMagic.Scene({
   .addTo(controller);
 
 // blog animations
-
 TweenMax.defaultEase = Power0.easeNone;
 ;
 var controller = new ScrollMagic.Controller({vertical: false});
@@ -201,9 +213,30 @@ new ScrollMagic.Scene({
   // })
   .addTo(controller);
 
+// progress bar scroll
+
+TweenMax.defaultEase = Power0.easeNone;
+;
+var controller6 = new ScrollMagic.Controller({vertical: false});
+var tl6 = new TimelineMax();
+tl6
+.to(".tl-span", 2, {width:'100%'});
+
+new ScrollMagic.Scene({
+  triggerElement: "#section01",
+  triggerHook: 'onLeave',
+  duration: "100%"
+})
+  .setTween(tl6)
+  .addIndicators({
+    colorTrigger: "#000",
+    colorStart: "#000",
+    colorEnd: "#000",
+  })
+  .addTo(controller6);
+
   
 // animate icons
-
 TweenMax.to(".icon-view-1", 275, {
   x: "+=550",
   modifiers: {
