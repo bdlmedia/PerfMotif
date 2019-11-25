@@ -225,7 +225,7 @@ tl6
 new ScrollMagic.Scene({
   triggerElement: "#section01",
   triggerHook: 'onLeave',
-  duration: "100%"
+  duration: "100%",
 })
   .setTween(tl6)
   .addIndicators({
@@ -235,7 +235,88 @@ new ScrollMagic.Scene({
   })
   .addTo(controller6);
 
+
+  TweenMax.defaultEase = Power0.easeNone;
+  ;
+  var controller7 = new ScrollMagic.Controller({vertical: false});
+  var tl7 = new TimelineMax();
+  tl7
+  .to(".tl-span2", 2, {width:'100%'});
   
+  new ScrollMagic.Scene({
+    triggerElement: "#section02",
+    triggerHook: 'onLeave',
+    duration: "100%",
+  })
+    .setTween(tl7)
+    .addIndicators({
+      colorTrigger: "#000",
+      colorStart: "#000",
+      colorEnd: "#000",
+    })
+    .addTo(controller7);
+
+    TweenMax.defaultEase = Power0.easeNone;
+    ;
+    var controller8 = new ScrollMagic.Controller({vertical: false});
+    var tl8 = new TimelineMax();
+    tl8
+    .to(".tl-span3", 2, {width:'100%'});
+    
+    new ScrollMagic.Scene({
+      triggerElement: "#section03",
+      triggerHook: 'onLeave',
+      duration: "100%",
+    })
+      .setTween(tl8)
+      .addIndicators({
+        colorTrigger: "#000",
+        colorStart: "#000",
+        colorEnd: "#000",
+      })
+      .addTo(controller8);
+
+      TweenMax.defaultEase = Power0.easeNone;
+      ;
+      var controller9 = new ScrollMagic.Controller({vertical: false});
+      var tl9 = new TimelineMax();
+      tl9
+      .to(".tl-span4", 2, {width:'100%'});
+      
+      new ScrollMagic.Scene({
+        triggerElement: "#section04",
+        triggerHook: 'onLeave',
+        duration: "100%",
+      })
+        .setTween(tl9)
+        .addIndicators({
+          colorTrigger: "#000",
+          colorStart: "#000",
+          colorEnd: "#000",
+        })
+        .addTo(controller9);
+
+        TweenMax.defaultEase = Power0.easeNone;
+        ;
+        var controller10 = new ScrollMagic.Controller({vertical: false});
+        var tl10 = new TimelineMax();
+        tl10
+        .to(".tl-span5", 2, {width:'100%'});
+        
+        new ScrollMagic.Scene({
+          triggerElement: "#section05",
+          triggerHook: 'onLeave',
+          duration: "100%",
+        })
+          .setTween(tl10)
+          .addIndicators({
+            colorTrigger: "#000",
+            colorStart: "#000",
+            colorEnd: "#000",
+          })
+          .addTo(controller10);
+
+
 // animate icons
 TweenMax.to(".icon-view-1", 275, {
   x: "+=550",
