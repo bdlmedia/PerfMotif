@@ -321,7 +321,6 @@ new ScrollMagic.Scene({
           // })
           .addTo(controller10);
 
-
 // animate icons
 TweenMax.to(".icon-view-1", 275, {
   x: "+=550",

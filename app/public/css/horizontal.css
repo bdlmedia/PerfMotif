@@ -247,12 +247,8 @@ html ::-webkit-scrollbar {
     width: 3px;
     height: 3px;
     bottom: -1px;
-    background: #ff3800;
-    /* background: rgba(119,119,119,.3); */
-    /* -webkit-transition: background .4s;
-    -o-transition: background .4s;
-    -moz-transition: background .4s;
-    transition: background .4s; */
+    /* background: #ff3800; */
+    background: rgba(119,119,119,.3);
 }
 
 .bm-menu-nav-item-line {
