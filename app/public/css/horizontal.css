@@ -427,7 +427,7 @@ display: flex;
     font-size: 6em;
     color: #fff;
     text-shadow: 2px 2px 4px #c8c8c8;
-    margin-top: -1.5em;
+    margin-top: -2.5em;
 }
 
 .s3-ind-title-cont {
@@ -438,13 +438,13 @@ display: flex;
 
 .s3-left-card-cont {
   display: flex;
-  flex-flow: row nowrap;
-  position: absolute;
-  width: 50em;
-  justify-content: space-between;
-  margin-top: 8em;
-  margin-left: -6em;
-  height: 50%;
+    flex-flow: row nowrap;
+    position: absolute;
+    width: 25em;
+    justify-content: flex-end;
+    margin-top: 5.7em;
+    margin-left: 0em;
+    height: 50%;
 }
 
 .s3-r-inner-row {
@@ -468,6 +468,15 @@ display: flex;
   align-items: center;
 }
 
+.s3-inner-ind-r {
+  display: flex;
+  flex-flow: column;
+  height: 90%;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-left: -2em;
+}
+
 .s3-ind-card {
   display: flex;
   align-content: center;
@@ -479,6 +488,7 @@ display: flex;
   box-shadow: 0.75rem 0.85rem 1.75rem 0 rgba(0,0,0,.32);
   padding-left: 1em;
   padding-right: 1em;
+  z-index: 4;
 }
 
 .s3-ind-card h4 {
@@ -530,7 +540,7 @@ display: flex;
 
 .s3-right-card-cont {
   display: flex;
-  flex-flow: column;
+  flex-flow: row nowrap;
   position: absolute;
   width: 50em;
   justify-content: space-between;

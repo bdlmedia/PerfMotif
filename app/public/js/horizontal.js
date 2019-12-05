@@ -78,6 +78,18 @@ tl5.reversed(true);
 function doCoolStuff() {
     tl5.reversed(!tl5.reversed());
 }
+// button 2
+document.querySelector("#aniBtn2").addEventListener("mouseenter", doCoolStuff2);
+document.querySelector("#aniBtn2").addEventListener("mouseleave", doCoolStuff2);
+
+let tl11 = new TimelineMax();
+tl11.to(document.querySelector("#aniBtn2").children[0], 0.4, {attr:{width:100, fill:"#00e7f7"}, autoAlpha: 0.8, ease: Elastic.easeOut.config(1, 1)});
+tl11.to("#btnTxt2", 0.2, {fill:"#fff", ease:Linear.easeNone}, 0);
+tl11.reversed(true);
+
+function doCoolStuff2() {
+    tl11.reversed(!tl11.reversed());
+}
 
 //end buttons
 $("#modal01-btn").click(function() {
