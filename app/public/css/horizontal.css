@@ -475,8 +475,10 @@ display: flex;
   align-items: center;
   background: #fafafa;
   border-radius: 5px;
-  width: 23em;
+  width: 25em;
   box-shadow: 0.75rem 0.85rem 1.75rem 0 rgba(0,0,0,.32);
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .s3-ind-card h4 {

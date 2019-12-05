@@ -66,18 +66,20 @@ for (var i = 0; i < iconGroupThree.length; i++) {
 
 // button animations
 
-document.querySelector("#aniBtn").addEventListener("mouseenter", doCoolStuff);
-document.querySelector("#aniBtn").addEventListener("mouseleave", doCoolStuff);
+// button 1
+document.querySelector("#aniBtn1").addEventListener("mouseenter", doCoolStuff);
+document.querySelector("#aniBtn1").addEventListener("mouseleave", doCoolStuff);
 
 let tl5 = new TimelineMax();
-tl5.to(document.querySelector("#aniBtn").children[0], 0.4, {attr:{width:100, fill:"#00e7f7"}, autoAlpha: 0.8, ease: Elastic.easeOut.config(1, 1)});
-tl5.to("text", 0.2, {fill:"#fff", ease:Linear.easeNone}, 0);
+tl5.to(document.querySelector("#aniBtn1").children[0], 0.4, {attr:{width:100, fill:"#00e7f7"}, autoAlpha: 0.8, ease: Elastic.easeOut.config(1, 1)});
+tl5.to("#btnTxt1", 0.2, {fill:"#fff", ease:Linear.easeNone}, 0);
 tl5.reversed(true);
 
 function doCoolStuff() {
     tl5.reversed(!tl5.reversed());
 }
 
+//end buttons
 $("#modal01-btn").click(function() {
   $('#modal01').css({
     display: 'flex'
@@ -88,32 +90,8 @@ $(".modal-top-cont span").click(function() {
   $('.modal-container').css({
     display: 'none'
   });
-  
 });
-  // menu bar animation
-  // $(document).scroll(function() {
-  //   var sectWidth = $('.section').width();
-  //   console.log("on scroll get width  " + sectWidth);
-  //    alert("youre scrolling you cunt");
-  //  });
 
-// function progress() {
-
-//   var windowScrollTop = $(window).scrollTop();
-//   var docHeight = $(document).height();
-//   var windowHeight = $(window).height();
-//   var progress = (windowScrollTop / (docHeight - windowHeight)) * 100;
-//   var $bgColor = progress > 99 ? '#4db792' : '#EF4E31';
-//   var $textColor = progress > 99 ? '#fff' : '#333';
-
-//   $('.progress .bar').width(progress + '%').css({ backgroundColor: $bgColor });
-//   $('h1').text(Math.round(progress) + '%').css({ color: $textColor });
-//   $('.fill').height(progress + '%').css({ backgroundColor: $bgColor });
-// }
-
-// progress();
-
-// $(document).on('scroll', progress);
 
 });
 
