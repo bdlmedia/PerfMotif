@@ -36,11 +36,11 @@ var iconGroupThree = $(".icon-view-3").children();
 for (var i = 0; i < iconGroupOne.length; i++) {
   // console.log(iconGroupOne[i]);
   // let overlapping = false;
-  // let canvasWidth = $(".icon-view-1").width();
-  // console.log('canvas width' + canvasWidth);
+  let canvasWidth = $(".icon-view-1").width();
+  console.log('canvas width' + canvasWidth);
   let canvasHeight = $(".icon-view-1").height();
   // console.log('canvas height' + canvasHeight);
-  let y = Math.floor(Math.random() * (canvasHeight + 1)) +1;
+  let y = Math.floor(Math.random() * (canvasHeight + 1)) + 1;
   // console.log('y' + y);
   let eachIcon = iconGroupOne[i];
   eachIcon.style.top = y;

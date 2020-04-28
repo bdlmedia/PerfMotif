@@ -12,6 +12,7 @@
     overflow: hidden;
     scroll-behavior: smooth;
   }
+
 html ::-webkit-scrollbar {
      width: 0px;  /* Remove scrollbar space */
      background: transparent;  /* Optional: just make scrollbar invisible */
@@ -40,6 +41,7 @@ html ::-webkit-scrollbar {
     width: calc( 100% / 6 );
     float: left;
     position: relative;
+    
   }
   #section01 {
     background: #fafafa;
@@ -112,25 +114,25 @@ html ::-webkit-scrollbar {
     display: flex;
     flex-flow: column;
     position: relative;
-    max-width: 40em;
+    max-width: 40%;
     min-height: 100vh;
     justify-content: center;
   }
   
   .logo-main {
-    min-width: 50em;
     margin-top: 3em;
     position: relative;
     min-height: 40em;
-    margin-right: 5em;
+    margin-right: 0.5em;
     margin-left: 3em;
     overflow: hidden;
   }
+
   .logo-main::after {
-    width:60em;
-    height:40em;
-    content:"";
-    position:absolute;
+    width: 60%;
+    height: 40em;
+    content: "";
+    position: absolute;
     margin-left: -5em;
   }
 
@@ -161,6 +163,7 @@ html ::-webkit-scrollbar {
   .hero-txt h1 {
     font-size: 2.6em;
   }
+
   .hero-txt p {
     font-size: .9em;
     line-height: 1.5em;
@@ -171,7 +174,8 @@ html ::-webkit-scrollbar {
     display: flex;
     flex-flow: column;
     position: relative;
-    max-width: 60em;
+    max-width: 60%;
+    width: 60%;
     min-height: 100vh;
     justify-content: space-between;
     margin-left: 0em;
@@ -228,6 +232,11 @@ html ::-webkit-scrollbar {
     position: relative;
     cursor: pointer;
     text-align: left;
+}
+
+.bm-menu-nav-item a {
+  text-decoration: none;
+  color: #888;
 }
 
 .bm-menu-nav-item-title {
@@ -291,10 +300,10 @@ html ::-webkit-scrollbar {
     justify-content: center;
     align-items: flex-end;
     text-align: left;
-    width: 20em;
+    width: 30%;
     font-size: 1.8em;
     line-height: 2.5em;
-    /* padding-left: 5em; */
+    padding-left: 1em;
     margin-top: -3em;
 }
 
@@ -315,7 +324,7 @@ html ::-webkit-scrollbar {
 .s2-mid-text {
     display: flex;
     height: 100%;
-    width: 25em;
+    width: 25%;
     align-items: center;
     margin-top: -15em;
     /* padding-left: 7em;
@@ -331,7 +340,7 @@ html ::-webkit-scrollbar {
 }
 
 .s2-right-img {
-    width: 55em;
+    width: 55%;
     height: 100%;
     display: flex;
     flex-flow: column;
