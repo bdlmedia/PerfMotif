@@ -1,32 +1,51 @@
 // ENABLE ONLY VERTICAL SCROLL
 
+(function() {
+  function scrollHorizontally(e) {
+      e = window.event || e;
+      var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+      document.getElementById('js-wrapper').scrollLeft -= (delta*40); // Multiplied by 40
+      e.preventDefault();
+  }
+  if (document.getElementById('js-wrapper').addEventListener) {
+      // IE9, Chrome, Safari, Opera
+      document.getElementById('js-wrapper').addEventListener("mousewheel", scrollHorizontally, false);
+      // Firefox
+      document.getElementById('js-wrapper').addEventListener("DOMMouseScroll", scrollHorizontally, false);
+  } else {
+      // IE 6/7/8
+      document.getElementById('js-wrapper').attachEvent("onmousewheel", scrollHorizontally);
+  }
+})();
+
 $( document ).ready(function() {
-var scroller = {};
-scroller.e = document.getElementById("js-wrapper");
 
-if (scroller.e.addEventListener) {
-    scroller.e.addEventListener("mousewheel", MouseWheelHandler, false);
-    scroller.e.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
-} else scroller.e.attachEvent("onmousewheel", MouseWheelHandler);
+//   var scroller = {};
+// scroller.e = document.getElementById("js-wrapper");
 
-function MouseWheelHandler(e) {
+// if (scroller.e.addEventListener) {
+//     scroller.e.addEventListener("mousewheel", MouseWheelHandler, false);
+//     scroller.e.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
+// } else scroller.e.attachEvent("onmousewheel", MouseWheelHandler);
 
-    // cross-browser wheel delta
-    var e = window.event || e;
-    var delta = - 20 * (Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail))));
+// function MouseWheelHandler(e) {
 
-    var pst = $('#js-wrapper').scrollLeft() + delta;
+//     // cross-browser wheel delta
+//     var e = window.event || e;
+//     var delta = - 20 * (Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail))));
 
-    if (pst < 0) {
-        pst = 0;
-    } else if (pst > $('#js-slideContainer').width()) {
-        pst = $('#js-slideContainer').width();
-    }
+//     var pst = $('#js-wrapper').scrollLeft() + delta;
 
-    $('#js-wrapper').scrollLeft(pst);
+//     if (pst < 0) {
+//         pst = 0;
+//     } else if (pst > $('#js-slideContainer').width()) {
+//         pst = $('#js-slideContainer').width();
+//     }
 
-    return false;    
-}
+//     $('#js-wrapper').scrollLeft(pst);
+
+//     return false;    
+// }
 
 //randomly place icons
 var iconGroupOne = $(".icon-view-1").children();
