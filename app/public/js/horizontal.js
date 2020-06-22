@@ -1,10 +1,9 @@
-// ENABLE ONLY VERTICAL SCROLL
-
+// ENABLE ONLY HORIZONTAL SCROLL
 (function() {
   function scrollHorizontally(e) {
       e = window.event || e;
       var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
-      document.getElementById('js-wrapper').scrollLeft -= (delta*40); // Multiplied by 40
+      document.getElementById('js-wrapper').scrollLeft -= (delta*20); // switch to 40 for deployment
       e.preventDefault();
   }
   if (document.getElementById('js-wrapper').addEventListener) {
@@ -17,37 +16,11 @@
       document.getElementById('js-wrapper').attachEvent("onmousewheel", scrollHorizontally);
   }
 })();
+//END HORIZONTAL SCROLL
 
 $( document ).ready(function() {
 
-//   var scroller = {};
-// scroller.e = document.getElementById("js-wrapper");
-
-// if (scroller.e.addEventListener) {
-//     scroller.e.addEventListener("mousewheel", MouseWheelHandler, false);
-//     scroller.e.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
-// } else scroller.e.attachEvent("onmousewheel", MouseWheelHandler);
-
-// function MouseWheelHandler(e) {
-
-//     // cross-browser wheel delta
-//     var e = window.event || e;
-//     var delta = - 20 * (Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail))));
-
-//     var pst = $('#js-wrapper').scrollLeft() + delta;
-
-//     if (pst < 0) {
-//         pst = 0;
-//     } else if (pst > $('#js-slideContainer').width()) {
-//         pst = $('#js-slideContainer').width();
-//     }
-
-//     $('#js-wrapper').scrollLeft(pst);
-
-//     return false;    
-// }
-
-//randomly place icons
+// RANDOMLY PLACE ICONS AT DIFFERENT VERITCAL POSITIONS
 var iconGroupOne = $(".icon-view-1").children();
 var iconGroupTwo = $(".icon-view-2").children();
 var iconGroupThree = $(".icon-view-3").children();
@@ -82,35 +55,38 @@ for (var i = 0; i < iconGroupThree.length; i++) {
   eachIcon.style.top = y;
   eachIcon.style.position = 'relative';
 }
+// END VERITCAL PLACED ICONS
 
-// button animations
-
-// button 1
-document.querySelector("#aniBtn1").addEventListener("mouseenter", doCoolStuff);
-document.querySelector("#aniBtn1").addEventListener("mouseleave", doCoolStuff);
+// START BUTTON ANIMATIONS
+// BUTTON 1
+document.querySelector("#aniBtn1").addEventListener("mouseenter", animateBtn);
+document.querySelector("#aniBtn1").addEventListener("mouseleave", animateBtn);
 
 let tl5 = new TimelineMax();
 tl5.to(document.querySelector("#aniBtn1").children[0], 0.4, {attr:{width:100, fill:"#00e7f7"}, autoAlpha: 0.8, ease: Elastic.easeOut.config(1, 1)});
 tl5.to("#btnTxt1", 0.2, {fill:"#fff", ease:Linear.easeNone}, 0);
 tl5.reversed(true);
 
-function doCoolStuff() {
+function animateBtn() {
     tl5.reversed(!tl5.reversed());
 }
-// button 2
-document.querySelector("#aniBtn2").addEventListener("mouseenter", doCoolStuff2);
-document.querySelector("#aniBtn2").addEventListener("mouseleave", doCoolStuff2);
+
+// START BUTTON 2
+document.querySelector("#aniBtn2").addEventListener("mouseenter", animateBtn2);
+document.querySelector("#aniBtn2").addEventListener("mouseleave", animateBtn2);
 
 let tl11 = new TimelineMax();
 tl11.to(document.querySelector("#aniBtn2").children[0], 0.4, {attr:{width:100, fill:"#00e7f7"}, autoAlpha: 0.8, ease: Elastic.easeOut.config(1, 1)});
 tl11.to("#btnTxt2", 0.2, {fill:"#fff", ease:Linear.easeNone}, 0);
 tl11.reversed(true);
 
-function doCoolStuff2() {
+function animateBtn2() {
     tl11.reversed(!tl11.reversed());
 }
 
-//end buttons
+// END BUTTON ANIMATIONS
+
+// START MODAL LOGIC
 $("#modal01-btn").click(function() {
   $('#modal01').css({
     display: 'flex'
@@ -123,21 +99,24 @@ $(".modal-top-cont span").click(function() {
   });
 });
 
-
 });
 
-//line scroll
+// START LINE SCROLL 
 TweenMax.from(".find-out-more-container hr", 2, {width:0}, {width:100}).repeat(1000);
+// END LINE SCROLL
 
-// entrance timeline
+
+// START ENTRANCE TIMELINE
     var tl = new TimelineMax();
     tl
+      .from(".bdl-logo-cont img", .5, {opacity: 0, y: 50})
       .from(".txt-1", .5, {opacity: 0, y: 50})
       .from(".txt-2", .3, {opacity: 0, y: 50})
       .from(".txt-3", .3, {opacity: 0, y: 50})
       .from(".txt-4", .3, {opacity: 0, y: 50});
-      // .from(".logo-main", 1, { scaleX: 0, transformOrigin: "left" }, "-=0.5");
-    
+// END ENTRANCE TIMELINE
+
+// START SECTION 2 SCROLL MAGIC TIMELINE
 TweenMax.defaultEase = Power0.easeNone;
 ;
 var controller = new ScrollMagic.Controller({vertical: false});
@@ -158,8 +137,9 @@ new ScrollMagic.Scene({
   //   colorEnd: "#000",
   // })
   .addTo(controller);
+// END SECTION 2 ANIMATION
 
-// portfolio animations
+// START PORTFOLIO SCTION TIMELINE ANIMATIONS
 TweenMax.defaultEase = Power0.easeNone;
 ;
 var controller = new ScrollMagic.Controller({vertical: false});
@@ -179,8 +159,10 @@ new ScrollMagic.Scene({
   //   colorEnd: "#000",
   // })
   .addTo(controller);
+// END PORTFOLIO SECTION ANIMATIONS
 
-// blog animations
+
+// START BLOG SECTION ANIMATIONS
 TweenMax.defaultEase = Power0.easeNone;
 ;
 var controller = new ScrollMagic.Controller({vertical: false});
@@ -200,8 +182,10 @@ new ScrollMagic.Scene({
   //   colorEnd: "#000",
   // })
   .addTo(controller);
+// END BLOG SECTION ANIMATIONS
 
-// contact animations
+
+// START CONTACT SECTION ANIMATIONS
 TweenMax.defaultEase = Power0.easeNone;
 ;
 var controller = new ScrollMagic.Controller({vertical: false});
@@ -221,9 +205,10 @@ new ScrollMagic.Scene({
   //   colorEnd: "#000",
   // })
   .addTo(controller);
+// END CONTACT SECTION ANIMATIONS
 
-// progress bar scroll
 
+// START NAV MENU ANIMATIONS
 TweenMax.defaultEase = Power0.easeNone;
 ;
 var controller6 = new ScrollMagic.Controller({vertical: false});
@@ -266,6 +251,7 @@ new ScrollMagic.Scene({
     //   colorEnd: "#000",
     // })
     .addTo(controller7);
+
 
     TweenMax.defaultEase = Power0.easeNone;
     ;
@@ -329,10 +315,12 @@ new ScrollMagic.Scene({
           //   colorEnd: "#000",
           // })
           .addTo(controller10);
+// END LINE NAV MENU ANIMATIONS
 
-// animate icons
+
+// START ANIMATE ICON CONTAINERS
 TweenMax.to(".icon-view-1", 275, {
-  x: "+=550",
+  x: "+=100%",
   modifiers: {
     x: function(x) {
       return x % 550; 
@@ -342,7 +330,7 @@ TweenMax.to(".icon-view-1", 275, {
 });
 
 TweenMax.to(".icon-view-2", 230, {
-  x: "-=550", //move each box 500px to right
+  x: "-=100%", //move each box 500px to right
   modifiers: {
     x: function(x) {
       return x % 550; //force x value to be between 0 and 500 using modulus
@@ -352,7 +340,7 @@ TweenMax.to(".icon-view-2", 230, {
 });
 
 TweenMax.to(".icon-view-3", 200, {
-  x: "+=550", //move each box 500px to right
+  x: "+=100%", //move each box 500px to right
   modifiers: {
     x: function(x) {
       return x % 550; //force x value to be between 0 and 500 using modulus
@@ -361,5 +349,6 @@ TweenMax.to(".icon-view-3", 200, {
   repeat: -1
 });
 
-//toggle overflow
+// toggle overflow
 $overflow.on("change", applyOverflow);
+// END ANIMATE ICON CONTAINERS
